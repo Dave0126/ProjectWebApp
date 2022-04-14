@@ -1,25 +1,22 @@
-# Java Web电影网站小项目
+# Java Web Project: Movie Website
 
-#### 介绍
-基于Servlet+JSP 构建的电影网站，适合初学Java Web
+#### Description
+A Movie Website Based on Servlet+JSP
 
-#### 软件架构
-   tomcat9 + IDEA
+#### Software Architecture
+tomcat9 + IDEA
 
 
-#### 包说明
+#### Package
 
-1. dao 直接操作数据库
-2. domain 对应数据库表的实体类
-3. exception 自定义异常
-4. filter 过滤器包
-5. listener 监听器包
-6. service 处理各种业务逻辑的包
-7. utils 工具包
-8. web.servlet.client 客户端的Servlet包
-9. web.servlet.management 后台管理的servlet包
+1. `dao` directly operates the database
+2. `domain` corresponds to the entity class of the database table
+3. `exception` custom exception
+4. `filter` filter package
+5. `listener` listener package
+6. `service` handles various business logic packages
+7. `utils` toolkit
+8. `web.servlet.client` client servlet package
+9. `web.servlet.management` servlet package for background management
 
-#### 使用说明
-注意，项目还有些地方存在问题，且项目架构没有清理好，所以存在些用不到的东西，可以忽略。
 
-#### 参与贡献
