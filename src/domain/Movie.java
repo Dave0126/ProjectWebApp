@@ -3,7 +3,7 @@ package domain;
 /**
  * @ClassName: Movie.java
  * @Description: 电影实体类
- * @author: zhuhaipeng
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:07:28
  */

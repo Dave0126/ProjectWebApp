@@ -7,7 +7,7 @@ import java.util.Date;
  *
  * @ClassName: User.java
  * @Description: 用户实体类
- * @author: zhuhaipeng
+ * @author: DaiGuohoo
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:08:12
  */

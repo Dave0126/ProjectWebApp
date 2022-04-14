@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @ClassName: ClickTimeDao.java
  * @Description: 处理与clicknumber表的数据交互
- * @author: zhuhaipeng
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月31日 下午10:21:15
  */

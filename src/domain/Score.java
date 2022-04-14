@@ -2,8 +2,8 @@ package domain;
 
 /**
  * @ClassName: Score.java
- * @Description: 对应数据库中的score表，记录用户对电影的评分
- * @author: zhuhaipeng
+ * @Description: 对应数据库中的score表，记录用户对电影的评分 Corresponding to the score table in the database, recording the user's rating of the movie
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:07:51
  */

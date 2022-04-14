@@ -10,7 +10,7 @@ import java.sql.SQLException;
 /**
  * @ClassName: UserDao.java
  * @Description: 用于操纵数据库，对 user表进行增删改查
- * @author: gdai
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2022-04-10
  */

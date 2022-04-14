@@ -4,8 +4,8 @@ import java.util.Date;
 
 /**
  * @ClassName: Collection.java
- * @Description: 对应数据库的collection表，记录用户喜欢的电影
- * @author: zhuhaipeng
+ * @Description: 对应数据库的collection表，记录用户喜欢的电影 The collection table corresponding to the database records the movies the user likes
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:05:50
  */

@@ -4,8 +4,8 @@ import java.util.Date;
 
 /**
  * @ClassName: Comment.java
- * @Description: 对应与数据库中的评论表(comments)，记录用户与电影之间的评论关系
- * @author: zhuhaipeng
+ * @Description: 对应与数据库中的评论表(comments)，记录用户与电影之间的评论关系 Corresponding to the comments table (comments) in the database, recording the comment relationship between the user and the movie
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:04:24
  */

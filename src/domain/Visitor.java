@@ -3,7 +3,7 @@ package domain;
 /**
  * @ClassName: Visitor
  * @Description: 参观者实体类
- * @author: GGBOY
+ * @author: DaiGuohao
  * @date 2019/11/21 16:26
  * @Version: 1.0
  **/

@@ -4,8 +4,8 @@ import java.util.Date;
 
 /**
  * @ClassName: History.java
- * @Description: 对应数据库中的history表，记录用户的观看历史
- * @author: zhuhaipeng
+ * @Description: 对应数据库中的history表，记录用户的观看历史 Corresponding to the history table in the database to record the user's viewing history
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月25日 下午9:06:58
  */

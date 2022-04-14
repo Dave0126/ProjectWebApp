@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @ClassName: MovieDao.java
  * @Description: TODO(处理与 allmovies表相关的操作)
- * @author: zhuhaipeng
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月27日 下午3:51:05
  */

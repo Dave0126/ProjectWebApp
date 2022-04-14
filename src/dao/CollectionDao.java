@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @ClassName: CollectionDao.java
  * @Description: TODO(处理与collection表相关的操作)
- * @author: zhuhaipeng
+ * @author: DaiGuohao
  * @version: V1.0
  * @Date: 2019年10月27日 下午4:11:06
  */
