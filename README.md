@@ -41,7 +41,7 @@ A Movie Website Based on Servlet+JSP
 ```
 git clone git@github.com:Dave0126/ProjectWebApp.git
 ```
-2. Use IDEA to open the project, configure jdk, tomcat and the required jar package.
+2. Use IDEA to open the project, configure jdk, tomcat and the required jar package. The jar package that the project depends on is in the `web/WEB-INF/lib` folder.
 3. Open your app in managing DB (for example, Navicat), create a database named `moviesdata` , copy the file content in `moviesdata.sql` and run.
 4. Modify the database-related content in `/src/c3p0-config.xml`.
 ```xml
