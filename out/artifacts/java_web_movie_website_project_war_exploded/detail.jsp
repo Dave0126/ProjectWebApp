@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>电影详情页</title>
+    <title>Pages : Movie Details</title>
     <link rel="stylesheet" href="font/iconfont.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="css/comment.css"/>
@@ -73,23 +73,23 @@
                 <img src="${detail.image }" alt="" style="border: 5px solid gray;">
                 <table class="info">
                     <tr class="info-tr">
-                        <td>上映日期</td>
+                        <td>Year</td>
                         <td>${detail.years}</td>
                     </tr>
                     <tr class="info-tr">
-                        <td>导演</td>
+                        <td>Director</td>
                         <td>${detail.director}</td>
                     </tr>
                     <tr class="info-tr">
-                        <td>地区</td>
+                        <td>Region</td>
                         <td>${detail.country}</td>
                     </tr>
                     <tr class="info-tr">
-                        <td>类型</td>
+                        <td>Type</td>
                         <td>${detail.type }</td>
                     </tr>
                     <tr class="info-tr">
-                        <td>主演</td>
+                        <td>Top Casts</td>
                         <td><span style=" text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -98,8 +98,8 @@
                         </span></td>
                     </tr>
                     <tr class="info-tr">
-                        <td>评分</td>
-                        <td>${detail.score }分</td>
+                        <td>Rating</td>
+                        <td>${detail.score }starts</td>
                     </tr>
                 </table>
             </div>
@@ -109,7 +109,7 @@
                 </div>
                 <span style="
                     width: auto;
-                    text-overflow:ellipsis;  
+                    text-overflow:ellipsis;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                      -webkit-line-clamp:9;
@@ -118,7 +118,7 @@
 
                 <div class="float-right">
                     <a class="btn btn-success" href="${detail.url}" role="button">
-                        <span class="">&nbsp;在线播放</span>
+                        <span class="">&nbsp;Link to IMDB</span>
                     </a>
                 </div>
             </div>
@@ -135,15 +135,15 @@
                             <div class="comment">
                                 <div class="content">
                                     <div class="cont-box">
-                                        <textarea class="text" placeholder="请输入..." id="description"></textarea>
+                                        <textarea class="text" placeholder="Please enter ..." id="description"></textarea>
                                     </div>
                                     <div class="tools-box">
                                         <div class="operator-box-btn">
-                                            <span class="face-icon" style="margin-top: -5px">☺</span>
-<%--                                            <span class="img-icon" style="margin-top: -15px">▧</span>--%>
+                                            <span class="face-icon" style="margin-top: -5px">Emoji</span>
+<%--                                            <span class="img-icon" style="margin-top: -15px">Images</span>--%>
                                         </div>
                                         <div class="submit-btn">
-                                            <input type="button" onClick="addComment()" value="提交评论"/>
+                                            <input type="button" onClick="addComment()" value="Submit"/>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +165,9 @@
                         if (user == null) {
 
                     %>
-                    <a href="${pageContext.request.contextPath}/login.do" class="float-right text-muted">
-                        <span style="font-size: 1.2em;" data-toggle="modal" data-target=".bd-example-modal-lg">评论</span>
+                    <!-- 如果用户没有登录 -->
+                    <a href="${pageContext.request.contextPath}/loginOrRegister.do" class="float-right text-muted">
+                        <span style="font-size: 1.2em;" data-toggle="modal" data-target=".bd-example-modal-lg">Comments</span>
                     </a>
                     <%
                     } else {
@@ -174,7 +175,7 @@
 
                     %>
                     <a href="#" class="float-right text-muted">
-                        <span style="font-size: 1.2em;" data-toggle="modal" data-target=".bd-example-modal-lg">评论</span>
+                        <span style="font-size: 1.2em;" data-toggle="modal" data-target=".bd-example-modal-lg">Comments</span>
                     </a>
                     <%
                         }
@@ -183,9 +184,9 @@
             </div>
             <div class="row">
                 <div class="row comment" style="width: 100%;">
-                    <c:forEach var="comment" items="${comments}" varStatus="status">
+                    <c:forEach var="comments" items="${commentsList}" varStatus="status">
                         <c:choose>
-                            <c:when test="${status.count <= 4}">
+                            <c:when test="${status.count <= 20}">
                                 <div class="c-info ml-5 mr-5 mt-5">
                                     <div class="row">
                                         <!-- 头像图片 -->
@@ -195,15 +196,15 @@
                                                  class="rounded-circle mt-2" width="80px" height="80px">
                                         </div>
                                         <div class="col-md-8">
-                                            <h4>${comment.userName}</h4>
-                                            <span style="color: gray;">${comment.addTime}</span>
+                                            <h4>${comments.userName}</h4>
+                                            <span style="color: gray;">${comments.addTime}</span>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="hid des">
-                                                    ${comment.description}
+                                                    ${comments.description}
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +215,7 @@
                                     <div class="row">
                                         <!-- 头像图片 -->
                                         <div class="col-md-3">
-                                            <img src="https://www.runoob.com/try/bootstrap/layoutit/v3/default3.jpg"
+                                            <img src="img/bg2.png"
                                                  alt="140*140"
                                                  class="rounded-circle mt-2" width="80px" height="80px">
                                         </div>
@@ -287,44 +288,7 @@
             <!-- 评论部分 结束 -->
         </div>
 
-        <!-- 热门电影 开始 -->
-        <div class="row bottom-menu">
-            <div class="row">
-                <!-- 标题 -->
-                <div class="col-md-12">
-                    <h3 class="hot-title">
-                        热门电影
-                    </h3>
-                </div>
-                <div class="col-md-12">
-                    <ul class="list-unstyled hot-movie">
-                        <c:forEach var="movie" items="<%=request.getAttribute(\"hotMovies\") %>" varStatus="status">
-                            <li>
-                                <div style="text-align: center;">
-                                    <a href="${pageContext.request.contextPath}/detail.do?movieName=${movie.name}"
-                                       style="height: 354.667px;">
-                                        <img src="${movie.image}" alt="">
-                                        <span style="display: block; position: relative; background: black;
-											margin-top: -40px; height: 40px; line-height: 40px; opacity: 0.7;
-											color: white;">${movie.name}</span>
-                                    </a>
-                                </div>
-                            </li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </div>
-            <div class="row more-info" style="width: 100%;">
-                <div class="col-md-12" style="text-align: center;">
-                    <a class="btn btn-default"
-                       href="${pageContext.request.contextPath}/category.do?category=${detail.type}"
-                       role="button"
-                       style="font-size: 1.2em; border-radius: 20px; width: 150px; background:#f6c624;"><strong>查看更多</strong></a>
-                </div>
-            </div>
-            <!-- 热门电影 结束 -->
 
-        </div>
 
         <script type="text/javascript">
             // 绑定表情

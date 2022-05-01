@@ -44,4 +44,5 @@ public class CommentDao {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         runner.update(sql, comment.getUserName(), comment.getMovieName(), comment.getDescription());
     }
+
 }

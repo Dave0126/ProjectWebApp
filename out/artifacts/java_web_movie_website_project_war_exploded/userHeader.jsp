@@ -69,13 +69,13 @@
         <div class="col-md-3 " style="margin: 0 auto;">
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item" id="user">
-                    <a href="${pageContext.request.contextPath}/userInfo" class="text-secondary">账户信息</a>
+                    <a href="${pageContext.request.contextPath}/userInfo" class="text-secondary">Account Info.</a>
                 </li>
                 <li class="list-group-item " id="history">
-                    <a href="${pageContext.request.contextPath}/history" class="text-secondary">历史记录 </a>
+                    <a href="${pageContext.request.contextPath}/history" class="text-secondary">History </a>
                 </li>
                 <li class="list-group-item " id="collect">
-                    <a href="${pageContext.request.contextPath}/collect" class="text-secondary">我的收藏</a>
+                    <a href="${pageContext.request.contextPath}/collect" class="text-secondary">My Collection</a>
                 </li>
             </ul>
         </div>

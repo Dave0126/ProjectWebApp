@@ -48,3 +48,15 @@ git clone git@github.com:Dave0126/ProjectWebApp.git
     <property name="user">root</property>
     <property name="password">root</property>
 ```
+
+## UPDATE LOG
+### 2022.5.1 Guohao
+1. Fix the problem about Searching by movie's name;
+2. Translate the structure to EN;
+3. Update the DB (`moviesdata.sql`); 
+
+#### BUGS to be fixed
+1. When clicking on the `detail` page of a movie with comments, the page doesn't go home and comes out again; this problem does not occur for movies without comments;
+2. On `category` pages, text encoding issues except first page;
+3. Rewrite the DB (`moviesdata.sql`);
+4. ...

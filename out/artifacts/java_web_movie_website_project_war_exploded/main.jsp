@@ -216,6 +216,7 @@
     }
 
 </script>
+
 <div id="main">
 
     <jsp:include page="headerMain.jsp"/>
@@ -234,7 +235,7 @@
                             <div class="hero-area-content pr-50">
                                 <h2>${hot.name}</h2>
                                 <div class="review mt-3">
-                                    <h4>${hot.score}&nbsp;分</h4>
+                                    <h4>${hot.score}&nbsp;stars</h4>
                                 </div>
                                 <p class="text-white">
                                         ${hot.des}
@@ -287,7 +288,7 @@
                                             class="icofont icofont-star"></i><i class="icofont icofont-star"></i><i
                                             class="icofont icofont-star"></i><i class="icofont icofont-star"></i>
                                     </div>--%>
-                                    <h4>${hotMovies[2].name}分</h4>
+                                    <h4>${hotMovies[2].name}stars</h4>
                                 </div>
                                 <p class="text-white">
                                     ${hotMovies[2].des}
@@ -307,7 +308,7 @@
             <div class="middle-content">
                 <div class="title">
                     <h2>
-                        <a class="text-white" href="#">最新电影</a>
+                        <a class="text-white" href="#">The latest movies</a>
                     </h2>
                 </div>
                 <div class="movie">
@@ -336,7 +337,7 @@
                                        href="${pageContext.request.contextPath}/detail.do?movieName=${m.name}">
                                             ${m.name }</a>
                                 </h4>
-                                <p class="inzhuy">主演：${m.actor}</p>
+                                <p class="inzhuy">Actors：${m.actor}</p>
                             </li>
                         </c:forEach>
 

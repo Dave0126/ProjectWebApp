@@ -10,7 +10,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core_1_1" %>
 <html>
 <head>
-    <title>YCU 小站</title>
+    <title>Movies Database</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">

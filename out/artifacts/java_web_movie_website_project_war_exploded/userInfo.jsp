@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>YCU 小站</title>
+    <title>Movie DataBase</title>
 
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -49,17 +49,17 @@
 
     <div class="container">
         <div class="row">
-            <h5 class="text-secondary">账户信息</h5>
+            <h5 class="text-secondary">Account Info.</h5>
             </br>
             <div class="col-md-12">
                 <div class="row">
                     <div class="col">
-                        <label for="">用户名 </label>
+                        <label for="">Username </label>
                         <input type="text" class="form-control" placeholder="<%=user.getUsername()%>" disabled>
 
                     </div>
                     <div class="col">
-                        <label for="">邮箱</label>
+                        <label for="">E-mail address</label>
                         <input type="email" class="form-control" placeholder="<%=user.getEmail()%>" disabled>
 
                     </div>
@@ -69,25 +69,25 @@
 
         <!-- 修改密码 -->
         <div class="row mt-4">
-            <h5 class="text-secondary">修改密码</h5>
+            <h5 class="text-secondary">Change Password</h5>
             </br>
             <div class="col-md-12">
                 <div class="row">
 
                     <div class="col">
-                        <label for="new-password">新密码 </label>
-                        <input type="password" id="new-password" class="form-control" placeholder="请输入新的密码">
+                        <label for="new-password">new Password </label>
+                        <input type="password" id="new-password" class="form-control" placeholder="Please enter the new Password">
 
                     </div>
                     <div class="col">
-                        <label for="confirm-password">确认密码</label>
-                        <input type="password" id="confirm-password" class="form-control" placeholder="请再输入一次">
+                        <label for="confirm-password">Confirm your Password</label>
+                        <input type="password" id="confirm-password" class="form-control" placeholder="Please enter your Password again">
 
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12 text-center">
-                        <input type="submit" class="btn btn-info" value="确认修改" style="width: 200px;"
+                        <input type="submit" class="btn btn-info" value="SUBMIT" style="width: 200px;"
                                onclick="alterPassword()">
                     </div>
                 </div>
@@ -105,7 +105,7 @@
         <div class="modal-content">
             <form class="avatar-form">
                 <div class="modal-header">
-                    <h4 class="modal-title float-left" id="avatar-modal-label">上传图片</h4>
+                    <h4 class="modal-title float-left" id="avatar-modal-label">Upload images</h4>
                     <button class="close" data-dismiss="modal" type="button">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -113,9 +113,9 @@
                         <div class="avatar-upload">
                             <input class="avatar-src" name="avatar_src" type="hidden">
                             <input class="avatar-data" name="avatar_data" type="hidden">
-                            <label for="avatarInput" style="line-height: 35px;">图片上传</label>
+                            <label for="avatarInput" style="line-height: 35px;">Upload images</label>
                             <button class="btn btn-danger" type="button" style="height: 35px;"
-                                    onclick="$('input[id=avatarInput]').click();">请选择图片
+                                    onclick="$('input[id=avatarInput]').click();">Choose a image...
                             </button>
                             <span id="avatar-name"></span>
                             <input class="avatar-input invisible" id="avatarInput" name="avatar_file" type="file">
@@ -134,38 +134,38 @@
                             <div class="col-md-5">
                                 <div class="btn-group">
                                     <button class="btn btn-danger fa fa-undo" data-method="rotate" data-option="-90"
-                                            type="button" title="Rotate -90 degrees"> 向左旋转
+                                            type="button" title="Rotate -90 degrees"> Turn left
                                     </button>
                                 </div>
                                 <div class="btn-group">
                                     <button class="btn  btn-danger fa fa-repeat" data-method="rotate"
-                                            data-option="90" type="button" title="Rotate 90 degrees"> 向右旋转
+                                            data-option="90" type="button" title="Rotate 90 degrees"> Turn right
                                     </button>
                                 </div>
                             </div>
                             <div class="col-md-4" style="text-align: right;">
                                 <button class="btn btn-danger fa fa-arrows" data-method="setDragMode"
-                                        data-option="move" type="button" title="移动">
+                                        data-option="move" type="button" title="Move">
                                         <span class="docs-tooltip" data-toggle="tooltip" title=""
                                               data-original-title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)">
                                         </span>
                                 </button>
                                 <button type="button" class="btn btn-danger fa fa-search-plus" data-method="zoom"
-                                        data-option="0.1" title="放大图片">
+                                        data-option="0.1" title="Zoom in">
                                         <span class="docs-tooltip" data-toggle="tooltip" title=""
                                               data-original-title="$().cropper(&quot;zoom&quot;, 0.1)">
                                             <!--<span class="fa fa-search-plus"></span>-->
                                         </span>
                                 </button>
                                 <button type="button" class="btn btn-danger fa fa-search-minus" data-method="zoom"
-                                        data-option="-0.1" title="缩小图片">
+                                        data-option="-0.1" title="Zoom out">
                                         <span class="docs-tooltip" data-toggle="tooltip" title=""
                                               data-original-title="$().cropper(&quot;zoom&quot;, -0.1)">
                                             <!--<span class="fa fa-search-minus"></span>-->
                                         </span>
                                 </button>
                                 <button type="button" class="btn btn-danger fa fa-refresh" data-method="reset"
-                                        title="重置图片">
+                                        title="Reset">
                                         <span class="docs-tooltip" data-toggle="tooltip" title=""
                                               data-original-title="$().cropper(&quot;reset&quot;)"
                                               aria-describedby="tooltip866214">
@@ -173,7 +173,7 @@
                                 </button>
                                 <div class="col-md-3">
                                     <button class="btn btn-danger btn-block avatar-save fa fa-save" type="button"
-                                            data-dismiss="modal"> 保存修改
+                                            data-dismiss="modal"> Save
                                     </button>
                                 </div>
                             </div>
@@ -195,16 +195,16 @@
         var target = $(e.target);
         var Size = target[0].files[0].size / 1024;
         if (Size > filemaxsize) {
-            alert('图片过大，请重新选择!');
+            alert('The image is too large, please re-select!'); // 图片过大，请重新选择!
             $(".avatar-wrapper").childre().remove;
             return false;
         }
         if (!this.files[0].type.match(/image.*/)) {
-            alert('请选择正确的图片!')
+            alert('Please choose the correct picture!') // 请选择正确的图片!
         } else {
             var filename = document.querySelector("#avatar-name");
             var texts = document.querySelector("#avatarInput").value;
-            var teststr = texts; //你这里的路径写错了
+            var teststr = texts; // 这里的路径写错了
             testend = teststr.match(/[^\\]+\.[^\(]+/i); //直接完整文件名的
             filename.innerHTML = testend;
         }

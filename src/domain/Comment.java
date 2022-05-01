@@ -56,4 +56,8 @@ public class Comment {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String toString(){
+        return this.userName + "\t" + this.addTime + "\t"+ this.description;
+    }
 }

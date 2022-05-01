@@ -14,12 +14,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Array;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
+import java.util.*;
 
 @WebServlet(urlPatterns = "/detail.do")
 public class DetailServlet extends HttpServlet {
@@ -75,21 +73,15 @@ public class DetailServlet extends HttpServlet {
             System.out.println("更新电影点击次数出错！！");
         }
 
-        try {
-            //  查询数据库中点击次数最多的电影作为热门电影
-            List<Movie> hotMovies = cTimeService.getHotMovies();
-            request.setAttribute("hotMovies", hotMovies);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+
 
 
         // 查找评论
         CommentService commentService = new CommentService();
         try {
             List<Comment> comments = commentService.findCommentsByMovieName(movieName);
-            request.setAttribute("comments", comments);
+
+            request.setAttribute("commentsList", comments);
 
             request.setAttribute("commentsSize", (int) Math.ceil((double)comments.size() / 4));
             System.out.println("评论数量：" + comments.size());

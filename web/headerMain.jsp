@@ -20,36 +20,36 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/main.do">首页
+                        <a class="nav-link" href="${pageContext.request.contextPath}/main.do">MAIN PAGE
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=喜剧">喜剧</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Comedy">COMEDY</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=剧情">剧情</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Drama">DRAMA</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=奇幻">奇幻</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Fantasy">FANTASY</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=科幻">科幻</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=SCI_FI">SCI-FI</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=动画">动画</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Animation">ANIMATION</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=恐怖">恐怖</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Horror">HORROR</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=悬疑">悬疑</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Mystery">MYSTERY</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=犯罪">犯罪</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Crime">CRIME</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=冒险">冒险</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Adventure">ADVENTURE</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=动作">动作</a></li>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/category.do?category=Action">ACTION</a></li>
                 </ul>
 
 
                 <form class="form-inline mt-2 mt-md-0 mr-3" action="${pageContext.request.contextPath}/search.do"
                       method="get">
-                    <input class="form-control mr-sm-2" type="text" name="search" placeholder="电影名" value=""
+                    <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search by name..." value=""
                            aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                         <span class="iconfont iconsousuo"></span></button>
@@ -76,23 +76,23 @@
                         <%
                         } else {
                         %>
-                        <a href="${pageContext.request.contextPath}/loginOrRegister.do">我的账户</a>
+                        <a href="${pageContext.request.contextPath}/loginOrRegister.do">My Account</a>
                         <%
                             }
                         %>
 
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/history">历史浏览</a>
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/userInfo">修改账户</a>
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/history">History</a>
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/userInfo">Modify Account</a>
                             <div class="dropdown-divider"></div>
                             <%
                                 if (user != null) {
                             %>
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/logout.do">退出</a>
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/logout.do">Exit</a>
                             <%
                             } else {
                             %>
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/login.do">登录</a>
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/login.do">Login</a>
                             <%
                                 }
                             %>

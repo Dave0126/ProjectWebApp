@@ -74,8 +74,8 @@
 <body>
 
 
-手机号<input id="mobile">
-<button value="注册" onclick="register1() " >注册</button>
+Phone Number<input id="mobile">
+<button value="registry" onclick="register1() " >Registry</button>
 <span id="tip"></span>
 </body>
 </html>

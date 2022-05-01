@@ -24,9 +24,9 @@ public class ClickTimeDao {
      * @Description: 更新对应电影的点击次数
      */
     public void updateRecord(String movieName) throws SQLException {
-        String sql = "UPDATE clicknumber SET number=(SELECT time FROM"
-                + "(SELECT number as time FROM clicknumber WHERE movieName=?)"
-                + "as a)+1 where movieName=?";
+        String sql = "UPDATE clicknumber SET number = (SELECT time FROM (SELECT number as time FROM clicknumber WHERE movieName=?)as a)+1 where movieName = ?";
+
+        // UPDATE clicknumber SET number = (SELECT time FROM (SELECT number as time FROM clicknumber WHERE movieName='罗小黑战记')as a)+1
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         runner.update(sql, movieName, movieName);
     }

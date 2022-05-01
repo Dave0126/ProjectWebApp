@@ -110,18 +110,18 @@
             <div class="col-md-12" id="menu">
                 <span id="left-arr" class="iconfont iconxiangzuo mr-2" style="color: white;"
                       onclick="hideOrShow()"></span>
-                <a href="${pageContext.request.contextPath}/category.do?category=动作" id="dongzuo">动作</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=冒险" class="ml-3">冒险</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=动画" class="ml-3">动画</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=惊悚" class="ml-3">惊悚</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=犯罪" class="ml-3">犯罪</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=喜剧" class="ml-3">喜剧</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=剧情" class="ml-3">剧情</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=奇幻" class="ml-3">奇幻</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=科幻" class="ml-3">科幻</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=恐怖" class="ml-3">恐怖</a>
-                <a href="${pageContext.request.contextPath}/category.do?category=悬疑" class="ml-3" id="xuanyi"
-                   style="display: none;">悬疑</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Action" id="dongzuo">ACTION</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Adventure" class="ml-3">ADVENTURE</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Animation" class="ml-3">ANIMATION</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Thriller" class="ml-3">THRILLER</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Crime" class="ml-3">CRIME</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Comedy" class="ml-3">COMEDY</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Drama" class="ml-3">DRAMA</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Fantasy" class="ml-3">FANTASY</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=SCI_FI" class="ml-3">SCI-Fi</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Horror" class="ml-3">HORROR</a>
+                <a href="${pageContext.request.contextPath}/category.do?category=Mystery" class="ml-3" id="xuanyi"
+                   style="display: none;">MYSTERY</a>
                 <span id="right-arr" class="iconfont iconyou ml-2" style="color: white; display: none;"
                       onclick="hideOrShow()"></span>
             </div>
@@ -130,10 +130,10 @@
 
         <div class="row mt-3 clearfix">
             <div class="col-md-8" id="category">
-                <h5 class="text-secondary d-inline-block">排序：</h5>
+                <h5 class="text-secondary d-inline-block">Sort：</h5>
                 <div class="dropdown d-inline-block ml-3" id="year">
                     <a class="dropdown-toggle" href="#" role="" id="dropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">年</a>
+                       aria-haspopup="true" aria-expanded="false">Year</a>
                     <div class="dropdown-menu bg-dark border-0" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">2019</a>
                         <a class="dropdown-item mt-1" href="#">2018</a>
@@ -143,12 +143,14 @@
                 <div class="dropdown d-inline-block ml-3" id="country">
                     <a class="dropdown-toggle" href="#" role="" id="dropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        国家
+                        Country
                     </a>
                     <div class="dropdown-menu bg-dark border-0" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">中国</a>
+                        <a class="dropdown-item mt-1" href="#">法国</a>
                         <a class="dropdown-item mt-1" href="#">美国</a>
                         <a class="dropdown-item mt-1" href="#">英国</a>
+                        <a class="dropdown-item mt-1" href="#">中国台湾</a>
                     </div>
                 </div>
             </div>

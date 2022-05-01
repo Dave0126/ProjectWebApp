@@ -44,7 +44,7 @@ public class StoreDataUtil {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         List<Movie> lists;
         // 定义要查询的种类
-        String[] types = new String[]{"最新", "科幻", "喜剧", "动作", "剧情", "动画", "恐怖", "悬疑", "奇幻"};
+        String[] types = new String[]{"最新", "SCI_FI", "Comedy", "Action", "Drama", "Animation", "Horror", "Mystery", "Fantasy"};
         for (int i = 0; i < types.length; i++) {
             try {
                 String sql;

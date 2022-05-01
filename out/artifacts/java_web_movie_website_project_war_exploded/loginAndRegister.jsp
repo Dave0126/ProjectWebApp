@@ -219,7 +219,7 @@
                 success:function (data) {
                     if(data === "ok"){
                         spop({
-                            template: '<h4 class="spop-title">注册成功</h4>即将于3秒后返回登录',
+                            template: '<h4 class="spop-title">Registered successfully</h4>Coming back to login in 3 seconds',
                             position: 'top-center',
                             style: 'success',
                             autoclose: 3000,
@@ -229,8 +229,8 @@
                                     if (second == 0) {
                                         clearInterval(showPop);
                                     }
-                                    $('.spop-body').html('<h4 class="spop-title">注册成功</h4>即将于' + second +
-                                        '秒后返回登录');
+                                    $('.spop-body').html('<h4 class="spop-title">Registered successfully</h4>Coming back to login in ' + second +
+                                        'seconds');
                                     second--;
                                 }, 1000);
                             },
@@ -240,7 +240,7 @@
                             }
                         });
                     }else{
-                        alert("注册失败，用户名已存在！！");
+                        alert("Registration failed, username already exists!!");
                         flag = false;
                     }
                 }
@@ -266,7 +266,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名不能为空"
+                    content: "Username can not be empty"
                 });
                 flag = true;
             }
@@ -277,7 +277,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "密码不能为空"
+                    content: "Password can not be blank"
                 });
                 flag = true;
             }
@@ -290,7 +290,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名必须为15位以下的字母或数字"
+                    content: "Username must be less than 15 letters or numbers"
                 });
                 flag = true;
             }
@@ -302,7 +302,7 @@
                 return false;
             } else { //重置密码
                 spop({
-                    template: '<h4 class="spop-title">重置密码成功</h4>即将于3秒后返回登录',
+                    template: '<h4 class="spop-title">Password reset successful</h4>Coming back to login in 3 seconds',
                     position: 'top-center',
                     style: 'success',
                     autoclose: 3000,
@@ -312,8 +312,8 @@
                             if (second == 0) {
                                 clearInterval(showPop);
                             }
-                            $('.spop-body').html('<h4 class="spop-title">重置密码成功</h4>即将于' + second +
-                                '秒后返回登录');
+                            $('.spop-body').html('<h4 class="spop-title">Password reset successful</h4>Coming back to login in ' + second +
+                                'seconds');
                             second--;
                         }, 1000);
                     },
@@ -365,7 +365,7 @@
 %>
 <script>
     $(document).ready(function () {
-        alert("此账号在别处登录，你已被踢下线，请重新登录");
+        alert("This account is logged in elsewhere, please log in again");
     })
 </script>
 <%
@@ -397,7 +397,7 @@
                     <section class="content">
 							<span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="text" id="login-username"
-                                       autocomplete="off" placeholder="请输入用户名" tabindex="1" maxlength="15"
+                                       autocomplete="off" placeholder="Please enter Username" tabindex="1" maxlength="15"
                                        name="username"/>
 								<label class="input__label input__label--hideo" for="login-username">
 									<i class="fa fa-fw fa-user icon icon--hideo"></i>
@@ -406,7 +406,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="password" id="login-password"
-                                       placeholder="请输入密码" tabindex="2" maxlength="15" name="password"/>
+                                       placeholder="Please enter Password" tabindex="2" maxlength="15" name="password"/>
 								<label class="input__label input__label--hideo" for="login-password">
 									<i class="fa fa-fw fa-lock icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -423,9 +423,9 @@
                     %>
                 </div>
                 <div class="form-actions">
-                    <a tabindex="4" class="btn pull-left btn-link text-muted" onClick="goto_forget()">忘记密码?</a>
-                    <a tabindex="5" class="btn btn-link text-muted" onClick="goto_register()">注册</a>
-                    <input class="btn btn-primary" type="submit" tabindex="3" value="登录"
+                    <a tabindex="4" class="btn pull-left btn-link text-muted" onClick="goto_forget()">Forgot password ?</a>
+                    <a tabindex="5" class="btn btn-link text-muted" onClick="goto_register()">Registry</a>
+                    <input class="btn btn-primary" type="submit" tabindex="3" value="Login"
                            style="color:white;"/>
                 </div>
             </form>
@@ -446,7 +446,7 @@
                     <section class="content">
 							<span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="text" id="forget-username"
-                                       autocomplete="off" placeholder="请输入用户名"/>
+                                       autocomplete="off" placeholder="Please enter your Username"/>
 								<label class="input__label input__label--hideo" for="forget-username">
 									<i class="fa fa-fw fa-user icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -454,7 +454,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="email" id="forget-code"
-                                       autocomplete="off" placeholder="请输入邮箱" name="email"/>
+                                       autocomplete="off" placeholder="Please enter your E-mail address" name="email"/>
 								<label class="input__label input__label--hideo" for="forget-code">
 									<i class="fa fa-fw fa-wifi icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -462,7 +462,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="password" id="forget-password"
-                                       placeholder="请重置密码"/>
+                                       placeholder="Reset your Password"/>
 								<label class="input__label input__label--hideo" for="forget-password">
 									<i class="fa fa-fw fa-lock icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -471,8 +471,8 @@
                     </section>
                 </div>
                 <div class="form-actions">
-                    <a class="btn pull-left btn-link text-muted" onClick="goto_login()">返回登录</a>
-                    <input class="btn btn-primary" type="submit" onClick="forget()" value="重置密码"
+                    <a class="btn pull-left btn-link text-muted" onClick="goto_login()">Back to login</a>
+                    <input class="btn btn-primary" type="submit" onClick="forget()" value="RESET Password"
                            style="color:white;"/>
                 </div>
             </form>
@@ -494,7 +494,7 @@
                     <section class="content">
 							<span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="text" id="register-username"
-                                       autocomplete="off" placeholder="请输入用户名" maxlength="15" name="username"/>
+                                       autocomplete="off" placeholder="Please enter your Username" maxlength="15" name="username"/>
 								<label class="input__label input__label--hideo" for="register-username">
 									<i class="fa fa-fw fa-user icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -502,7 +502,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="password" id="register-password"
-                                       placeholder="请输入密码" maxlength="15" name="password"/>
+                                       placeholder="Please enter your Password" maxlength="15" name="password"/>
 								<label class="input__label input__label--hideo" for="register-password">
 									<i class="fa fa-fw fa-lock icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -510,7 +510,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="password" id="register-repassword"
-                                       placeholder="请确认密码" maxlength="15" name="confirmPassword"/>
+                                       placeholder="Confirm your Password" maxlength="15" name="confirmPassword"/>
 								<label class="input__label input__label--hideo" for="register-repassword">
 									<i class="fa fa-fw fa-lock icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -518,7 +518,7 @@
 							</span>
                         <span class="input input--hideo">
 								<input class="input__field input__field--hideo" type="email" id="register-code"
-                                       autocomplete="off" placeholder="请输入邮箱" name="email"/>
+                                       autocomplete="off" placeholder="Please enter your E-mail address" name="email"/>
 								<label class="input__label input__label--hideo" for="register-code">
 									<i class="fa fa-fw fa-wifi icon icon--hideo"></i>
 									<span class="input__label-content input__label-content--hideo"></span>
@@ -527,8 +527,8 @@
                     </section>
                 </div>
                 <div class="form-actions">
-                    <a class="btn pull-left btn-link text-muted" onClick="goto_login()">返回登录</a>
-                    <input class="btn btn-primary" type="submit" value="注册"
+                    <a class="btn pull-left btn-link text-muted" onClick="goto_login()">Back to log in</a>
+                    <input class="btn btn-primary" type="submit" value="Registry"
                            style="color:white;"/>
                 </div>
             </form>

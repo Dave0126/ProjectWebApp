@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/dreamlike.css"/>
-    <title>搜索结果</title>
+    <title>Result</title>
     <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
