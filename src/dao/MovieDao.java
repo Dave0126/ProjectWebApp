@@ -24,7 +24,7 @@ public class MovieDao {
      * @Description: TODO(查找所有电影)
      */
     public List<Movie> findAllMovies() throws SQLException {
-        String sql = "select * from allmovies GROUP BY name";
+        String sql = "select * from allmovies";
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         return runner.query(sql, new BeanListHandler<>(Movie.class));
     }

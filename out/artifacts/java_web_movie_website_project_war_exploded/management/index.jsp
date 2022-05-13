@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>YCU小站 - 后台管理</title>
+    <title>Movie Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
     <meta content="Coderthemes" name="author"/>
@@ -71,6 +71,7 @@
                         <div class="dropdown-item noti-title">
                             <h5 class="m-0"><span class="float-right"><a href="" class="text-dark"><small>Clear
                                                 All</small></a> </span>Notification</h5>
+                            <h6 class="m-0">(There is no function, only for demo)</h6>
                         </div>
 
                         <div class="slimscroll noti-scroll">
@@ -165,7 +166,7 @@
 
                         <!-- item-->
                         <a href="${pageContext.request.contextPath}/logout.do" class="dropdown-item notify-item">
-                            <i class="dripicons-power"></i> <span>退出</span>
+                            <i class="dripicons-power"></i> <span>QUIT</span>
                         </a>
 
                     </div>
@@ -209,11 +210,11 @@
                 <ul class="navigation-menu">
 
                     <li class="has-submenu">
-                        <a href="index.jsp"><i class="mdi mdi-view-dashboard"></i>主页</a>
+                        <a href="index.jsp"><i class="mdi mdi-view-dashboard"></i>About Site</a>
                     </li>
 
                     <li class="">
-                        <a href="${pageContext.request.contextPath}/movieManagement"><i class="mdi mdi-file-multiple"></i>电影管理</a>
+                        <a href="${pageContext.request.contextPath}/movieManagement"><i class="mdi mdi-file-multiple"></i>Manage movies</a>
                     </li>
 
                 </ul>
@@ -234,10 +235,10 @@
         <div class="page-title-alt-bg"></div>
         <div class="page-title-box">
             <ol class="breadcrumb float-right">
-                <li class="breadcrumb-item"><a href="javascript:void(0);">YCU 小站</a></li>
-                <li class="breadcrumb-item active">主页</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0);">MDB</a></li>
+                <li class="breadcrumb-item active">About Site</li>
             </ol>
-            <h4 class="page-title">主页</h4>
+            <h4 class="page-title">About Site</h4>
         </div>
         <!-- End page title box -->
 
@@ -245,10 +246,13 @@
             <div class="col-xl-4">
 
                 <div class="card-box">
-                    <h4 class="header-title">总用户人数</h4>
+                    <h4 class="header-title">Total number of users (simulated):</h4>
+                    <h6 class="m-0">(There is no function, only for demo)</h6>
                     <p class="text-muted" id="time"></p>
                     <div class="mb-3 mt-4">
-                        <h2 class="font-weight-light">40</h2>
+                        <h2 class="font-weight-light">32
+                            <%-- Simulated by: web/management/assets/js/jquery.dashboard.js/lineChart() --%>
+                        </h2>
                     </div>
                     <div class="chartjs-chart dash-sales-chart">
                         <canvas id="sales-chart"></canvas>
@@ -257,7 +261,7 @@
 
                 <div class="card-box gradient-success bx-shadow-lg">
                     <div class="float-left">
-                        <h2 class="text-white mb-0 mt-2">在线人数</h2>
+                        <h2 class="text-white mb-0 mt-2">Online users (real)</h2>
                     </div>
                     <div class="text-right">
                         <h3 class="text-white" id="onlineNumber">
@@ -299,15 +303,15 @@
                             <a href="javascript:void(0);" class="dropdown-item">Action</a>
                         </div>
                     </div>
-                    <h4 class="header-title mb-3">访问者信息</h4>
+                    <h4 class="header-title mb-3">Visitors info.</h4>
 
                     <div class="table-responsive">
                         <table class="table table-centered table-hover mb-0" id="datatable">
                             <thead>
                             <tr>
                                 <th class="border-top-0">SessionId</th>
-                                <th class="border-top-0">IP地址</th>
-                                <th class="border-top-0">第一次登陆时间</th>
+                                <th class="border-top-0">IP address</th>
+                                <th class="border-top-0">First login time</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -342,7 +346,8 @@
                 <a href="javascript:void(0);" class="right-bar-toggle float-right">
                     <i class="dripicons-cross noti-icon"></i>
                 </a>
-                <h5 class="m-0">Settings</h5>
+                <h5 class="m-0">Settings (Simulated)</h5>
+                <h6 class="m-0">(There is no function, only for demo)</h6>
             </div>
             <div class="slimscroll-menu">
                 <!-- User box -->

@@ -79,7 +79,7 @@ File: Dashboard
         var lineChart = {
             labels: ["01", "02", "03", "04", "05", "06", "07", "08"],
             datasets: [ {
-                label: "新增用户数",
+                label: "Number of users(fake)",
                 fill: true,
                 backgroundColor: "rgba(2, 168, 181, 0.1)",
                 borderColor: gradientStroke,
@@ -87,7 +87,7 @@ File: Dashboard
                 pointBackgroundColor: gradientStroke,
                 pointHoverBackgroundColor: gradientStroke,
                 pointHoverBorderColor: gradientStroke,
-                data: [1, 2, 3, 4, 7, 8, 9, 6]
+                data: [1, 2, 0, 7, 3, 8, 9, 2]
             }]
         };
 

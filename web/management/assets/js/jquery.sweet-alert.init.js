@@ -51,22 +51,22 @@ File: Sweet Alerts
             var name = $(this).parent().prevAll().eq(5).text();
             var hide = $(this).parent().parent();
             swal({
-                title: '确认删除？',
-                text: "是否删除该电影",
+                title: 'Attention',
+                text: "Comfier to delete？",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonClass: 'btn btn-confirm mt-2',
                 cancelButtonClass: 'btn btn-cancel ml-2 mt-2',
-                confirmButtonText: '是',
-                cancelButtonText: "否"
+                confirmButtonText: 'Yes',
+                cancelButtonText: "No"
             }).then(function (dismiss) {
                 // dismiss can be 'cancel', 'overlay',
                 // 'close', and 'timer'
                 console.log(dismiss);
                 if (dismiss['dismiss'] === 'cancel') {
                     swal({
-                        title: '取消操作',
-                        text: "取消删除",
+                        title: 'Cancel',
+                        text: "Cancel op. ",
                         type: 'error',
                         confirmButtonClass: 'btn btn-confirm mt-2'
                     });
@@ -80,7 +80,7 @@ File: Sweet Alerts
                                 $(hide).addClass("d-none");
                                 swal({
                                         title: 'Deleted !',
-                                        text: "删除成功",
+                                        text: "Successfully",
                                         type: 'success',
                                         confirmButtonClass: 'btn btn-confirm mt-2'
                                     }
@@ -91,8 +91,8 @@ File: Sweet Alerts
                         },
                         error: function () {
                             swal({
-                                title: '取消操作',
-                                text: "取消删除",
+                                title: 'Cancel',
+                                text: "Cancel op.",
                                 type: 'error',
                                 confirmButtonClass: 'btn btn-confirm mt-2'
                             });
@@ -179,35 +179,35 @@ File: Sweet Alerts
             var country;
             var type;
             var s = swal({
-                title: '<h2>更改信息</h2>',
+                title: '<h2>Modify Info.</h2>',
                 type: 'info',
                 html: '<form class="form-horizontal">' +
                     '<div class="form-group row">' +
-                    '<label class="col-sm-2 col-form-label">电影名</label>' +
+                    '<label class="col-sm-2 col-form-label">Name</label>' +
                     '<div class="col-sm-10">' +
                     '<input type="text" class="form-control" id="name" value="' + parents.eq(5).text() + '">' +
                     '</div>' +
                     ' </div>' +
                     '<div class="form-group row">' +
-                    '<label class="col-sm-2 col-form-label">电影评分</label>' +
+                    '<label class="col-sm-2 col-form-label">Score</label>' +
                     '<div class="col-sm-10">' +
                     '<input type="text" class="form-control" id="score" value="' + parents.eq(4).text() + '">' +
                     '</div>' +
                     ' </div>' +
                     '<div class="form-group row">' +
-                    '<label class="col-sm-2 col-form-label">电影上映年份</label>' +
+                    '<label class="col-sm-2 col-form-label">Year</label>' +
                     '<div class="col-sm-10">' +
                     '<input type="text" class="form-control" id="year" value="' + parents.eq(2).text() + '">' +
                     '</div>' +
                     ' </div>' +
                     '<div class="form-group row">' +
-                    '<label class="col-sm-2 col-form-label">电影上映国家</label>' +
+                    '<label class="col-sm-2 col-form-label">Region</label>' +
                     '<div class="col-sm-10">' +
                     '<input type="text" class="form-control" id="country" value="' + parents.eq(1).text() + '">' +
                     '</div>' +
                     ' </div>' +
                     '<div class="form-group row">' +
-                    '<label class="col-sm-2 col-form-label">电影类型</label>' +
+                    '<label class="col-sm-2 col-form-label">Type</label>' +
                     '<div class="col-sm-10">' +
                     '<input type="text" class="form-control" id="type" value="' + parents.eq(0).text() + '">' +
                     '</div>' +
@@ -217,8 +217,8 @@ File: Sweet Alerts
                 showCancelButton: true,
                 confirmButtonClass: 'btn btn-confirm mt-2',
                 cancelButtonClass: 'btn btn-cancel ml-2 mt-2',
-                confirmButtonText: '<h3>提交修改</h3>',
-                cancelButtonText: '<h3>取消</h3>',
+                confirmButtonText: '<h3>SUBMIT</h3>',
+                cancelButtonText: '<h3>CANCEL</h3>',
                 preConfirm: function () {
                     name = $("#name").val();
                     score = $("#score").val();
@@ -249,8 +249,8 @@ File: Sweet Alerts
                         success: function (data) {
                             if (data === "OK") {
                                 swal({
-                                    title: '提交中',
-                                    text: "修改成功",
+                                    title: 'Processing...',
+                                    text: "Successfully",
                                     type: 'success',
                                     confirmButtonClass: 'btn btn-confirm mt-2'
                                 });
@@ -262,8 +262,8 @@ File: Sweet Alerts
                                 parents.eq(0).text(type);
                             } else {
                                 swal({
-                                    title: '发生错误',
-                                    text: "修改信息失败",
+                                    title: 'ERROR',
+                                    text: "Failed to modify info.",
                                     type: 'error',
                                     confirmButtonClass: 'btn btn-confirm mt-2'
                                 })
@@ -271,8 +271,8 @@ File: Sweet Alerts
                         },
                         error: function () {
                             swal({
-                                title: '发生错误',
-                                text: "修改信息失败",
+                                title: 'ERROR',
+                                text: "Failed to modify info.",
                                 type: 'error',
                                 confirmButtonClass: 'btn btn-confirm mt-2'
                             })

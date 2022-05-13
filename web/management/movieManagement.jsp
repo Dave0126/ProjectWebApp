@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>YCU 电影管理</title>
+    <title>Movie Management System</title>
     <link href="management/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet"
           type="text/css"/>
     <link href="management/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
@@ -74,6 +74,7 @@
                         <div class="dropdown-item noti-title">
                             <h5 class="m-0"><span class="float-right"><a href="" class="text-dark"><small>Clear
                                                 All</small></a> </span>Notification</h5>
+                            <h6 class="m-0">(There is no function, only for demo)</h6>
                         </div>
 
                         <div class="slimscroll noti-scroll">
@@ -168,7 +169,7 @@
 
                         <!-- item-->
                         <a href="${pageContext.request.contextPath}/logout.do" class="dropdown-item notify-item">
-                            <i class="dripicons-power"></i> <span>退出</span>
+                            <i class="dripicons-power"></i> <span>QUIT</span>
                         </a>
 
                     </div>
@@ -212,12 +213,12 @@
                 <ul class="navigation-menu">
 
                     <li class="has-submenu">
-                        <a href="management/index.jsp"><i class="mdi mdi-view-dashboard"></i>主页</a>
+                        <a href="management/index.jsp"><i class="mdi mdi-view-dashboard"></i>About site</a>
                     </li>
 
                     <li class="">
                         <a href="${pageContext.request.contextPath}/movieManagement"><i
-                                class="mdi mdi-file-multiple"></i>电影管理</a>
+                                class="mdi mdi-file-multiple"></i>Manage movies</a>
                     </li>
 
                 </ul>
@@ -236,32 +237,32 @@
         <div class="page-title-alt-bg"></div>
         <div class="page-title-box">
             <ol class="breadcrumb float-right">
-                <li class="breadcrumb-item"><a href="javascript:void(0);">YCU</a></li>
-                <li class="breadcrumb-item active">电影管理</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0);">MDB</a></li>
+                <li class="breadcrumb-item active">Manage movies</li>
             </ol>
-            <h4 class="page-title">电影管理</h4>
+            <h4 class="page-title">Manage movies</h4>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="card-box">
                     <div class="row w-100">
                         <div class="col-md-12">
-                            <h4 class="header-title float-left">所有电影</h4>
+                            <h4 class="header-title float-left">All movies</h4>
                             <a href="#custom-modal" class="btn btn-primary waves-effect w-md mr-2 mb-2 float-right"
                                data-animation="blur" data-plugin="custommodal"
-                               data-overlaySpeed="100" data-overlayColor="#36404a">添加电影</a>
+                               data-overlaySpeed="100" data-overlayColor="#36404a">Add</a>
                         </div>
                     </div>
                     <table id="datatable" class="table table-bordered dt-responsive nowrap">
                         <thead>
                         <tr>
-                            <th>名字</th>
-                            <th>评分</th>
-                            <th>导演</th>
-                            <th>上映日期</th>
-                            <th>上映国家</th>
-                            <th>类型</th>
-                            <th>删除 / 修改</th>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>Director</th>
+                            <th>Year</th>
+                            <th>Region</th>
+                            <th>Type</th>
+                            <th>Delete / Modify</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -274,6 +275,7 @@
                                 <td>${movie.country}</td>
                                 <td>${movie.type}</td>
                                 <td>
+                                    <%-- web/management/assets/js/jquery.sweet-alert.init.js --%>
                                     <button type="button" id="sa-warning" class="btn btn-sm btn-icon btn-danger">
                                         <span><i class="mdi mdi-close"></i></span>
                                     </button>
@@ -296,92 +298,92 @@
     <button type="button" class="close" onclick="Custombox.modal.close();">
         <span>&times;</span><span class="sr-only">Close</span>
     </button>
-    <h4 class="custom-modal-title">添加电影</h4>
+    <h4 class="custom-modal-title">Add a movie</h4>
     <form class="form-horizontal m-2" method="post"
           action="${pageContext.request.contextPath}/managementAjax?choose=insert"
           enctype="multipart/form-data">
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">电影名</label>
+            <label class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="name">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">评分</label>
+            <label class="col-sm-2 col-form-label">Score</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="score">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">导演</label>
+            <label class="col-sm-2 col-form-label">Director</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="director">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">编剧</label>
+            <label class="col-sm-2 col-form-label">ScriptWriter</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="scriptwriter">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">演员</label>
+            <label class="col-sm-2 col-form-label">Actors</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="actor">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">上映日期</label>
+            <label class="col-sm-2 col-form-label">Year</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="years">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">上映国家</label>
+            <label class="col-sm-2 col-form-label">Region</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="country">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">语言</label>
+            <label class="col-sm-2 col-form-label">Language</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="languages">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">片长</label>
+            <label class="col-sm-2 col-form-label">Runtime</label>
             <div class="col-sm-10">
                 <input class="form-control" type="number" name="length">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">电影海报图片</label>
+            <label class="col-sm-2 col-form-label">Post pic.(海报)</label>
             <div class="col-sm-10">
                 <input type="file" class="form-control" name="image"
                        accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">电影描述</label>
+            <label class="col-sm-2 col-form-label">Description</label>
             <div class="col-sm-10">
                 <textarea class="form-control" rows="5" name="des"></textarea>
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">播放地址</label>
+            <label class="col-sm-2 col-form-label">URL to IMDB</label>
             <div class="col-sm-10">
                 <input class="form-control" type="url" name="url">
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">类型</label>
+            <label class="col-sm-2 col-form-label">Type</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" value="" name="type">
             </div>
         </div>
         <div class="form-group row ">
             <div class="col-md-12 text-center align-content-center">
-                <button type="submit" class="btn btn-primary btn-rounded w-md">提交</button>
+                <button type="submit" class="btn btn-primary btn-rounded w-md">SUBMIT</button>
             </div>
         </div>
     </form>

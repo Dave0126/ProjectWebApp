@@ -60,3 +60,9 @@ git clone git@github.com:Dave0126/ProjectWebApp.git
 2. On `category` pages, text encoding issues except first page;
 3. Rewrite the DB (`moviesdata.sql`);
 4. ...
+
+
+
+### 2022.05.13 Guohao
+
+1. Finish the management page for `admin`, finish `add a movie`, `delete a movie`, `search by name` and `modify the movie information`.
