@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Guohao
+  Date: 2022/04/10
+  Time: 14:55
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%
     String path = request.getContextPath();
@@ -11,7 +18,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>登录</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/sign-up-login.css">
@@ -116,7 +123,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名不能为空"
+                    content: "Username can not be empty!"
                 });
                 flag = false;
             }
@@ -127,7 +134,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "密码不能为空"
+                    content: "Password can not be empty!"
                 });
                 flag = false;
             }
@@ -140,7 +147,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名必须为15位以下的字母或数字"
+                    content: "Username must be less than 15 numbers or letters!"
                 });
                 flag = false;
             }
@@ -169,7 +176,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名不能为空"
+                    content: "Username can not be empty!"
                 });
                 flag = false;
             }
@@ -180,7 +187,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "密码不能为空"
+                    content: "Password can not be empty!"
                 });
                 flag = false;
             } else {
@@ -191,7 +198,7 @@
                         align: 't',
                         width: 'auto',
                         height: 'auto',
-                        content: "两次输入的密码不一致"
+                        content: "Password is wrong!"
                     });
                     flag = false;
                 }
@@ -205,7 +212,7 @@
                     align: 't',
                     width: 'auto',
                     height: 'auto',
-                    content: "用户名必须为15位以下的字母或数字"
+                    content: "Username must be less than 15 numbers or letters! "
                 });
                 flag = false;
             }
@@ -213,7 +220,7 @@
             //调后台代码检查用户名是否已经被注册
             $.ajax({
                 url:"register.do",
-                data:"username="+ username +"&password="+password+"&email"+code,
+                data:"username="+ username +"&password="+password+"&email="+code,
                 type:"POST",
                 async: false,
                 success:function (data) {

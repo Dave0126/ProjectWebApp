@@ -18,6 +18,8 @@ public class HistoryDao {
      * @param movieName 电影名
      * @throws SQLException
      * @Description: 添加一条浏览记录, 如果存在则忽略
+     * @author: Guohao
+     * @version: V1.0
      */
     public void addRecord(int userId, String movieName) throws SQLException {
         String sql = "INSERT IGNORE INTO history (movieName, userid) values(?,?) ";

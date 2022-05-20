@@ -275,6 +275,7 @@
                                 <td>${movie.country}</td>
                                 <td>${movie.type}</td>
                                 <td>
+                                    <%-- web/management/assets/js/jquery.sweet-alert.init.js --%>
                                     <button type="button" id="sa-warning" class="btn btn-sm btn-icon btn-danger">
                                         <span><i class="mdi mdi-close"></i></span>
                                     </button>

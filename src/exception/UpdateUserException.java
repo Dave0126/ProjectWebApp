@@ -3,8 +3,7 @@ package exception;
 /**
  * @ClassName: UpdateUserException
  * @Description: TODO
- * @author: GGBOY
- * @date 2019/11/14 22:49
+ * @author: Guohao
  * @Version: 1.0
  **/
 public class UpdateUserException extends Exception {

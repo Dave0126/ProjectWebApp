@@ -1,4 +1,10 @@
 package exception;
+/**
+ * @ClassName: FindProductByIdException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 
 public class FindProductByIdException extends Exception {
 

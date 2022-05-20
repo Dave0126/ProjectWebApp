@@ -1,4 +1,10 @@
 package exception;
+/**
+ * @ClassName: AddProductException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 
 public class AddProductException extends Exception {
 

@@ -3,9 +3,8 @@ package domain;
 /**
  * @ClassName: ClickTime.java
  * @Description: 记录电影被点击次数的实体类 Entity class that records the number of times a movie has been clicked
- * @author: DaiGuohao
+ * @author: Guohao
  * @version: V1.0
- * @Date: 2019年10月31日 下午10:19:01
  */
 public class ClickTime {
     /**

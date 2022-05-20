@@ -1,4 +1,10 @@
 package exception;
+/**
+ * @ClassName: ActiveUserException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 
 //激活用户
 public class ActiveUserException extends Exception {

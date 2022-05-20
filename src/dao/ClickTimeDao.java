@@ -13,9 +13,8 @@ import java.util.List;
 /**
  * @ClassName: ClickTimeDao.java
  * @Description: 处理与clicknumber表的数据交互
- * @author: DaiGuohao
+ * @author: Guohao
  * @version: V1.0
- * @Date: 2019年10月31日 下午10:21:15
  */
 public class ClickTimeDao {
     /**
@@ -58,8 +57,8 @@ public class ClickTimeDao {
      * 功查询数据库中点击次数最多的3部电影
      *
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/26
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> getThreeHotMovies() throws SQLException {
         String sql = "SELECT * FROM allmovies WHERE name in ( SELECT movieName FROM(SELECT * " +

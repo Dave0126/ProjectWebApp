@@ -13,9 +13,8 @@ import java.util.List;
 /**
  * @ClassName: MovieDao.java
  * @Description: TODO(处理与 allmovies表相关的操作)
- * @author: DaiGuohao
+ * @author: Guohao
  * @version: V1.0
- * @Date: 2019年10月27日 下午3:51:05
  */
 public class MovieDao {
 
@@ -61,8 +60,8 @@ public class MovieDao {
      * @param type 电影种类
      * @param page 当前显示页
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/7
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMovieByYearAndCatrgory(String type, String year, int page) throws SQLException {
         String sql = "select * from allmovies where type = ? and years = ? limit ?, ?";
@@ -162,8 +161,8 @@ public class MovieDao {
      * @param type 电影种类
      * @param year 电影年份
      * @return int 电影数量
-     * @author GGBOY
-     * @date 2019/11/7
+     * @author: Guohao
+     * @version: V1.0
      */
     public int findMoviesCountByTypeAndYear(String type, String year) throws SQLException {
         String sql = "select count(*) from allmovies where type = ? and years = ?";
@@ -179,8 +178,8 @@ public class MovieDao {
      * @param country  电影国家
      * @param category 电影种类
      * @return int
-     * @author GGBOY
-     * @date 2019/11/8
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByCountryAndCategory(String country, String category) throws SQLException {
         country = "%" + country + "%";
@@ -196,8 +195,8 @@ public class MovieDao {
      * @param country  电影国家
      * @param category 电影种类
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/8
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByCountryAndCategory(String country, String category, int page) throws SQLException {
         country = "%" + country + "%";
@@ -213,8 +212,8 @@ public class MovieDao {
      * @param category 电影种类
      * @param year     电影上映年份
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/8
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByCountryAndYearAndCategory(String country, String category, String year, int page) throws SQLException {
         country = "%" + country + "%";
@@ -230,8 +229,8 @@ public class MovieDao {
      * @param category 电影种类
      * @param year     电影上映年份
      * @return 符合条件的电影数量
-     * @author GGBOY
-     * @date 2019/11/8
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByCountryAndYearAndCategory(String country, String category, String year) throws SQLException {
         country = "%" + country + "%";
@@ -249,8 +248,8 @@ public class MovieDao {
      * @param category 电影种类
      * @param page     当前显示页数
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/9
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByYearAndScoreAndCategory(String year, String score, String category, int page) throws SQLException {
         String sql = "select * from allmovies where years = ? and score > ? and type = ? limit ?, ?";
@@ -265,8 +264,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/9
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByCountryAndScoreAndCategory(String country, String score, String category, int page) throws SQLException {
         String sql = "select * from allmovies where country = ? and score > ? and type = ? limit ?, ?";
@@ -282,8 +281,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/9
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByYearAndCountryAndScoreAndCategory(String year, String country, String score,
                                                                      String category, int page) throws SQLException {
@@ -300,8 +299,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影类型
      * @return java.util.List<domain.Movie>
-     * @author GGBOY
-     * @date 2019/11/10
+     * @author: Guohao
+     * @version: V1.0
      */
     public List<Movie> findMoviesByScoreAndCategory(String score, String category, int page) throws SQLException {
         String sql = "select * from allmovies where score > ? and type = ? limit ?, ?";
@@ -317,8 +316,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return int
-     * @author GGBOY
-     * @date 2019/11/10
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByYearAndScoreAndCategory(String year, String score, String category) throws SQLException {
         String sql = "select count(*) from allmovies where years = ? and score > ? and type = ?";
@@ -334,8 +333,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return int
-     * @author GGBOY
-     * @date 2019/11/10
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByCountryAndScoreAndCategory(String country, String score, String category) throws SQLException {
         String sql = "select count(*) from allmovies where country = ? and score > ? and type = ?";
@@ -352,8 +351,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return int
-     * @author GGBOY
-     * @date 2019/11/10
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByYearAndCountryAndScoreAndCategory(String year, String country, String score, String category) throws SQLException {
         String sql = "select count(*) from allmovies where years = ? and country = ? and score > ? and type = ?";
@@ -368,8 +367,8 @@ public class MovieDao {
      * @param score    电影评分
      * @param category 电影种类
      * @return int
-     * @author GGBOY
-     * @date 2019/11/10
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMoviesCountByScoreAndCategory(String score, String category) throws SQLException {
         String sql = "select count(*) from allmovies where score > ? and type = ?";
@@ -382,8 +381,8 @@ public class MovieDao {
      * 得到最大的电影 id
      *
      * @return int
-     * @author GGBOY
-     * @date 2019/11/25
+     * @author: Guohao
+     * @version: V1.0
      */
     public int getMaxMovieId() throws SQLException {
         String sql = "select id from allmovies ORDER BY id desc LIMIT 0,1";

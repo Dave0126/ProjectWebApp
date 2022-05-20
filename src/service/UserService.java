@@ -12,9 +12,7 @@ import java.sql.SQLException;
 /**
  * @ClassName: UserService.java
  * @Description: 与用户相关的业务逻辑层
- * @author: zhuhaipeng
- * @version: V1.0
- * @Date: 2019年10月25日 下午9:46:47
+ * @author: Guohao
  */
 public class UserService {
 
@@ -37,13 +35,13 @@ public class UserService {
                 if (user.getState() == 1) {
                     return user;
                 }
-                throw new LoginException("用户未激活");
+                throw new LoginException("User is not activity!");
             }
 
-            throw new LoginException("用户名或密码错误");
+            throw new LoginException("Username or Password is wrong!");
         } catch (Exception e) {
             e.printStackTrace();
-            throw new LoginException("登录失败，请检查用户名或密码是否有误！！");
+            throw new LoginException("Login failed, please try again...");
         }
     }
 
@@ -56,7 +54,7 @@ public class UserService {
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            throw new RegisterException("注册失败！用户名已存在！");
+            throw new RegisterException("Register failed! Username is exited!");
         }
     }
 
@@ -65,7 +63,7 @@ public class UserService {
             dao.updateUser(user);
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new UpdateUserException("更新用户信息失败!");
+            throw new UpdateUserException("Failed to modify the information!");
         }
     }
 

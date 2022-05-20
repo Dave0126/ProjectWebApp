@@ -1,5 +1,10 @@
 package exception;
-
+/**
+ * @ClassName: RegisterException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 //注册用户
 public class RegisterException extends Exception {
 

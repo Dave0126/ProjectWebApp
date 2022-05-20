@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Guohao
+  Date: 2022/04/10
+  Time: 14:55
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page import="domain.User" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -182,11 +189,15 @@
                     %>
                 </div>
             </div>
+            <!-- ERROR Comments -->
             <div class="row">
                 <div class="row comment" style="width: 100%;">
                     <c:forEach var="comments" items="${commentsList}" varStatus="status">
                         <c:choose>
-                            <c:when test="${status.count <= 20}">
+                            <c:when test="${status.count <= 4}">
+
+
+
                                 <div class="c-info ml-5 mr-5 mt-5">
                                     <div class="row">
                                         <!-- 头像图片 -->
@@ -203,11 +214,12 @@
                                     <hr>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="hid des">
+                                            <div class="hid">
                                                     ${comments.description}
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </c:when>
                             <c:otherwise>
@@ -220,15 +232,15 @@
                                                  class="rounded-circle mt-2" width="80px" height="80px">
                                         </div>
                                         <div class="col-md-8">
-                                            <h4>${comment.userName}</h4>
-                                            <span style="color: gray;">${comment.addTime}</span>
+                                            <h4>${comments.userName}</h4>
+                                            <span style="color: gray;">${comments.addTime}</span>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="hid des">
-                                                    ${comment.description}
+                                            <div class="hid">
+                                                    ${comments.description}
                                             </div>
                                         </div>
                                     </div>
@@ -238,6 +250,7 @@
                     </c:forEach>
                 </div>
             </div>
+            <!---->
             <div class="row" style=" width: 100%; margin-top: 10px;">
                 <c:if test="${commentsSize > 0}">
                     <div class="col-md-12" style="text-align: center;">
@@ -294,35 +307,7 @@
             // 绑定表情
             $('.face-icon').SinaEmotion($('.text'));
 
-            /*
-            // 测试本地解析
-            function out() {
-                var inputText = $('.text').val();
-                console.log(inputText);
-                $('#info-show ul').append(reply(AnalyticEmotion(inputText)));
 
-            }
-
-            var html;
-
-            function reply(content) {
-                console.log("content: " + content);
-                // html = '<li>';
-                //  html += '<div class="head-face">';
-                //  html += '<img src="images/bg2.png" / >';
-                //  html += '</div>';
-                //  html += '<div class="reply-cont">';
-                //  html += '<p class="username">小小红色飞机</p>';
-                //  html += '<p class="comment-body">' + content + '</p>';
-                //  html += '<p class="comment-footer">2016年10月5日　回复　点赞54　转发12</p>';
-                //  html += '</div>';
-                //  html += '</li>';
-                var newEle = '<p>';
-                newEle += content;
-                newEle += '</p>';
-                return newEle;
-            }
-            */
             function addComment() {
                 var description = $("#description").val();
                 var movieName = $("#movieName").text();

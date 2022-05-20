@@ -50,8 +50,11 @@ public class RegisterServlet extends HttpServlet {
                     response.getWriter().write("ok");
                     User user = new User();
                     user.setUsername(username);
+                    logger.warn(" New User ----------> Name:" +username);
                     user.setPassword(password);
+                    logger.warn(" New User ----------> Password:" +password);
                     user.setEmail(email);
+                    logger.warn(" New User ----------> Email:" +email);
 
                     // 注册用户
                     service.register(user);

@@ -1,4 +1,10 @@
 package exception;
+/**
+ * @ClassName: LoginException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 
 public class LoginException extends Exception {
 

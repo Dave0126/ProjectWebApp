@@ -16,9 +16,8 @@ import java.util.Map;
 /**
  * @ClassName: StoreDataUtil.java
  * @Description: 用于服务器启动时，向数据库中查询特定数据并保存的一个类
- * @author: zhuhaipeng
- * @version: V1.0
- * @Date: 2019年10月29日 下午9:53:56
+ * @author: Guohao
+ * @Version: 1.0
  */
 public class StoreDataUtil {
     private Map<String, List<Movie>> movies = new HashMap<String, List<Movie>>();

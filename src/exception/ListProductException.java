@@ -1,5 +1,11 @@
 package exception;
 
+/**
+ * @ClassName: ListProductException
+ * @Description: TODO
+ * @author: Guohao
+ * @Version: 1.0
+ **/
 public class ListProductException extends Exception {
 
     private static final long serialVersionUID = 1L;

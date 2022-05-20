@@ -15,6 +15,8 @@ public class CommentDao {
      * @param movieId
      * @return
      * @Description: TODO(根据用户Id和电影id查找评论)
+     * @author: Guohao
+     * @version: V1.0
      */
     public String findCommentByUserIdAndMovieId(int userId, int movieId) {
         return null;
@@ -36,8 +38,8 @@ public class CommentDao {
      * 添加一条评论
      *
      * @param comment 评论对象
-     * @author GGBOY
-     * @date 2019/12/3
+     * @author: Guohao
+     * @version: V1.0
      */
     public void addComment(Comment comment) throws SQLException {
         String sql = "insert into comments(userName,movieName,description) values(?,?,?)";
