@@ -3,10 +3,7 @@ package web.servlet.client;
 import domain.Comment;
 import domain.Movie;
 import domain.User;
-import service.ClickTimeService;
-import service.CommentService;
-import service.HistoryService;
-import service.MovieService;
+import service.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

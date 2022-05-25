@@ -106,7 +106,13 @@
                     </tr>
                     <tr class="info-tr">
                         <td>Rating</td>
-                        <td>${detail.score }starts</td>
+                        <td>${detail.score}
+                            <span class="iconfont iconwujiaoxing-" style="color: darkorange;">&nbsp
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="info-tr">
+
                     </tr>
                 </table>
             </div>
@@ -128,6 +134,7 @@
                         <span class="">&nbsp;Link to IMDB</span>
                     </a>
                 </div>
+
             </div>
             <!-- 电影详情 结束 -->
 

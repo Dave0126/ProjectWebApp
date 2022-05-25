@@ -78,6 +78,7 @@
 </script>
 
 <body class="bg-dark">
+<meta charset="UTF-8">
 <script>
     $(document).ready(function () {
         if ($(window).load) {
@@ -183,13 +184,16 @@
                                         <p class="card-text  align-middle">
                                             <small class="text-muted">${m.years}</small>
                                             <small class="float-right">
+
                                                 <a href="#" onclick="collection(this);return false;"
                                                    style="text-decoration: none">
                                                     <span class="iconfont iconaixin">&nbsp;</span>
                                                 </a>
+
                                                 <a href="###" style="text-decoration: none">
                                                     <span class="iconfont iconai-eye">&nbsp;</span>
                                                 </a>
+
                                                 <span class="iconfont iconwujiaoxing-"
                                                       style="color: yellow;">&nbsp;</span>
                                                 <span id="m-score" class="align-middle"

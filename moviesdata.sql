@@ -22,12 +22,12 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `allmovies`;
 CREATE TABLE `allmovies` (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT '电影id',
+  `id` iInt NOT NULL AUTO_INCREMENT COMMENT '电影id',
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '电影名字',
   `score` int DEFAULT NULL COMMENT '电影评分',
   `director` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '导演',
   `scriptwriter` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '编剧',
-  `actor` mediumtext CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '演员',
+  `actor` mediumtext ysL SET utf8 COLLATE utf8_general_ci COMMENT '演员',
   `years` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '上映日期',
   `country` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '国家',
   `languages` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '语言',
@@ -1577,7 +1577,7 @@ COMMIT;
 -- ----------------------------
 -- Table structure for comments
 -- ----------------------------
-DROP TABLE IF EXISTS `comments`;
+DROP TABLE IF EXISTS `cocmments`;
 CREATE TABLE `comments` (
   `userName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户ID',
   `movieName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '电影ID',
