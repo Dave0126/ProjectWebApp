@@ -306,7 +306,7 @@ $(function () {
 function collection(obj) {
     var movieName = $(obj).parent().parent().prev().text().trim();
     var userName = $("#navbardrop").text().trim();
-    console.log(movieName + " " + userName);
+    console.log("Collection:" + movieName + " " + userName);
     if (userName !== "我的账户") {
         $(obj).toggleClass("text-danger");
         $.ajax({

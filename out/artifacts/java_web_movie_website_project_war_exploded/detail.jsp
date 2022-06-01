@@ -135,6 +135,10 @@
                     </a>
                 </div>
 
+
+
+
+
             </div>
             <!-- 电影详情 结束 -->
 
@@ -448,10 +452,10 @@
                         }
                     });
                 }
-
-
             }
+
         </script>
+
         <jsp:include page="foot.jsp"/>
     </div>
 </body>
