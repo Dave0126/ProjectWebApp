@@ -62,7 +62,7 @@ public class ClickTimeDao {
      */
     public List<Movie> getThreeHotMovies() throws SQLException {
         String sql = "SELECT * FROM allmovies WHERE name in ( SELECT movieName FROM(SELECT * " +
-                "FROM clicknumber ORDER BY number DESC LIMIT 3) as t) GROUP BY name";
+                "FROM clicknumber ORDER BY number DESC LIMIT 3) as t)";
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         return runner.query(sql, new BeanListHandler<Movie>(Movie.class));
     }

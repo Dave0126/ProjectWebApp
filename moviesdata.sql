@@ -11,7 +11,7 @@
  Target Server Version : 80028
  File Encoding         : 65001
 
- Date: 01/05/2022 19:59:19
+ Date: 01/06/2022 15:08:48
 */
 
 SET NAMES utf8mb4;
@@ -22,12 +22,12 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `allmovies`;
 CREATE TABLE `allmovies` (
-  `id` iInt NOT NULL AUTO_INCREMENT COMMENT '电影id',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '电影id',
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '电影名字',
   `score` int DEFAULT NULL COMMENT '电影评分',
   `director` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '导演',
   `scriptwriter` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '编剧',
-  `actor` mediumtext ysL SET utf8 COLLATE utf8_general_ci COMMENT '演员',
+  `actor` mediumtext CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '演员',
   `years` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '上映日期',
   `country` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '国家',
   `languages` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '语言',
@@ -178,7 +178,6 @@ INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `act
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (133, '黑豹 Black Panther', 7, '瑞恩·库格勒、', '瑞恩·库格勒、乔·罗伯特·科尔、斯坦·李、杰克·科比、', '查德维克·博斯曼、露皮塔·尼永奥、迈克尔·B·乔丹、丹娜·奎里拉、马丁·弗瑞曼、丹尼尔·卡卢亚、利蒂希娅·赖特、温斯顿·杜克、斯特林·K·布朗、安吉拉·贝塞特、福里斯特·惠特克、安迪·瑟金斯、弗洛伦丝·卡松巴、约翰·卡尼、大卫·S·李、娜比娅·毕、', '2018', ' 美国 / 南非 / 韩国 / 澳大利亚', ' 斯瓦希里语 / 英语 / 科萨语 / 韩语', '134分钟', 'dongzuo//33.jpg', '\n                                　　位于非洲的神秘国家瓦坎达，凭借来自宇宙的振金而成为科技极度发达的国家，不过他们长久封闭，始终对外界保守这个秘密。在前国王死于联合国爆炸袭击后，特查拉王子（查德维克·博斯曼 Chadwick Boseman 饰）继任成为新的国王，同时他也是黑豹的继承者。登基之后，特查拉与前女友娜吉雅（露皮塔·尼永奥 Lupita Nyong\'o 饰）、贴身侍卫奥姆烨（丹娜·奎里拉 Danai Gurira 饰）追查曾经盗取振金并杀害瓦坎达人的尤利西斯·克劳（安迪·瑟金斯 Andy Serkis 饰）。一番厮杀后，克劳侥幸逃脱，谁知最终死于合伙人艾瑞克·克尔芒戈（迈克尔·B·乔丹 Michael B. Jordan 饰）之手。艾瑞克同样具有瓦坎达血统，而且当年他的父亲死在了自己的兄弟——特查拉父亲的手中。\n                                    \n                                　　怀着莫大的仇恨，艾瑞克踏足瓦坎达，去争夺至高无上的王位……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr7p16x0.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (134, '速度与激情7', 8, '庄文强、', '庄文强、', '周润发、郭富城、张静初、冯文娟、廖启智、周家怡、王耀庆、方中信、高捷、邢佳栋、张松枝、张建声、吴嘉龙、孙佳君、', '2018', ' 中国大陆 / 中国香港', ' 汉语普通话 / 粤语 / 英语 / 泰语 / 波兰语', '130分钟', 'dongzuo//34.jpg', '\n                                　　身陷囹圄的李问（郭富城 饰）被引渡回港，他原本隶属于一个的跨国假钞制贩组织。该组织曾犯下过多宗恶性案件，而首脑“画家”不仅始终逍遥法外，连真面目都没人知道。为了逼迫李问吐露“画家”真实身份，警方不惜用足以判死刑的假罪证使其就范。就在此时，富有的遗孀阮文（张静初 饰）申请保释李问，而警方提出的条件依然是“画家”的真面目。\n                                    \n                                　　原来早在十数年前，李问和阮文是一对画家情侣，无奈女友的作品受人青睐，李问的画作却被贬得一文不值。就在此困顿期间，他制作假画的才能被“画家”（周润发 饰）发掘，进而成为对方美元假币团伙中的一员……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrdgdwpg.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (135, '蚁人 Ant-Man', 8, '佩顿·里德、', '斯坦·李、杰克·科比、拉里·利伯、埃德加·赖特、乔·考尼什、亚当·麦凯、保罗·路德、', '保罗·路德、迈克尔·道格拉斯、伊万杰琳·莉莉、寇瑞·斯托尔、迈克尔·佩纳、大卫·达斯马齐连、朱迪·格雷尔、鲍比·坎纳瓦尔、约翰·斯拉特里、伍德·哈里斯、T.I.、海莉·阿特维尔、瓦内萨·罗斯、马丁·唐文、乔·克里斯特、艾比·莱德·弗特森、安东尼·麦凯、加勒特·莫里斯、尼尔·汉博格、鲁德·哈利特、斯坦·李、克里斯·埃文斯、塞巴斯蒂安·斯坦、', '2015', ' 美国', ' 英语', '117分钟', 'dongzuo//35.jpg', '\n                                　　前工程师斯科特（保罗·路德 Paul Rudd 饰）由于劫富济贫进了监狱，出狱后的他为了争取看望女儿的权利又走上了盗窃之路。没想到一次意外的偷盗事件让他成为了新一代“蚁人”，老蚁人汉克.皮姆博士（迈克尔·道格拉斯 Michael Douglas 饰）成为了他的导师，可皮姆博士的女儿霍普（伊万杰琳·莉莉 Evangeline Lilly 饰）却并不看好他。但是危机迫在眉睫，为了对付强大的敌人拯救世界，斯科特不得不叫来自己的一帮狐朋狗友帮助自己完成一个不可能完成的任务。而取得任务的成功也是斯科特挽回女儿的关键，屌丝能否逆袭就看最后一击。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrklq2bs.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (136, 'V字仇杀队 V for Vendetta', 9, '詹姆斯·麦克特格、', '莉莉·沃卓斯基、拉娜·沃卓斯基、', '娜塔莉·波特曼、雨果·维文、斯蒂芬·瑞、斯蒂芬·弗雷、约翰·赫特、蒂姆·皮戈特-史密斯、鲁珀特·格雷夫斯、罗杰·阿拉姆、本·迈尔斯、西妮德·库萨克、娜塔莎·怀特曼、约翰·斯坦丁、埃迪·马森、克里夫·阿什伯恩、Emma Field-Rayner、伊安·布尔费尔德、Mark Phoenix、Alister Mazzotti、比莉·库克、盖伊·亨利、科斯马·肖、Megan Gay、Roderic Culver、Tara Hacking、安迪·莱什利兹、查德·斯塔赫斯基、布拉德利·斯蒂夫·福特、Madeleine Rakic-Platt、塞丽娜·贾尔斯、卡斯腾·海斯、伊莫琴·普茨、劳拉·格林伍德、Kyra Meyer、玛丽·萧克莱 、理查德·莱恩、Michael Simkins、', '2005', ' 美国 / 英国 / 德国', ' 英语', '132分钟', 'dongzuo//36.jpg', '\n                                　　未来的英国社会处于极权统治的高压下，不能容许同性恋者、异教徒等社会角色的存在，人民在黑暗政权下苟延残喘。\n                                    \n                                　　这晚，年轻女子艾薇（娜塔丽·波特曼 Natalie Portman饰）身陷险境，幸得V（雨果·维文 Hugo Weaving饰）相助。V是一个永远带着面具的神秘男子，拥有高智商和超凡战斗力。V继承了前革命英雄的使命，为了推翻荒唐极权的统治阶层，他成立了神秘的地下组织，摧毁了伦敦的标志性建筑，点燃了反政府的熊熊烈火。\n                                    \n                                　　艾薇和V深入接触，不仅得知了V的神秘使命，还渐渐发现原来自己的身世，注定了自己和V是同一条阵线的人。\n                        ', NULL, 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (137, '雷神3：诸神黄昏 Thor: Ragnarok', 7, '塔伊加·维迪提、', '埃里克·皮尔森、克雷格·凯尔、克里斯托弗·约斯特、斯坦·李、拉里·利伯、杰克·科比、', '克里斯·海姆斯沃斯、汤姆·希德勒斯顿、凯特·布兰切特、伊德里斯·艾尔巴、杰夫·高布伦、泰莎·汤普森、卡尔·厄本、马克·鲁弗洛、安东尼·霍普金斯、本尼迪克特·康伯巴奇、塔伊加·维迪提、瑞切尔·豪斯、克兰西·布朗、浅野忠信、雷·史蒂文森、扎克瑞·莱维、卢克·海姆斯沃斯、马特·达蒙、山姆·尼尔、夏洛特·尼克道、斯坦·李、', '2017', ' 美国', ' 英语', '130分钟', 'dongzuo//37.jpg', '\n                                　　在“索科维亚战役”两年后，雷神索尔（克里斯·海姆斯沃斯 Chris Hemsworth 饰）识破了洛基（汤姆·希德勒斯顿 Tom Hiddleston 饰）的伪装，辗转找到了被放逐到地球的奥丁（安东尼·霍普金斯 Anthony Hopkins 饰）。然而垂死的奥丁却告知两个儿子，“诸神的黄昏”已经开始，曾遭到奥丁封禁的死亡女神海拉（凯特·布兰切特 Cate Blanchett 饰）即将重返阿斯加德。与海拉的初次对决中，索尔失去了雷神之锤，他和洛基也被打落至混乱不堪的萨卡星。在萨卡的决斗场上，索尔重逢失踪许久的绿巨人，也见到了曾从海拉魔爪下逃得一生的女武神。\n                                    \n                                　　历经千辛万苦，索尔和战友们重返阴云密布的阿斯加德，去正视这注定要到来的“诸神的黄昏”……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr7qiwaw.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (138, 'X战警：黑凤凰 Dark Phoenix', 6, '西蒙·金伯格、', '西蒙·金伯格、约翰·拜恩、克里斯·克雷蒙、戴夫·科克勒姆、杰克·科比、斯坦·李、', '苏菲·特纳、詹姆斯·麦卡沃伊、迈克尔·法斯宾德、尼古拉斯·霍尔特、泰伊·谢里丹、杰西卡·查斯坦、詹妮弗·劳伦斯、柯蒂·斯密特-麦菲、亚历山德拉·希普、埃文·彼得斯、丹尼尔·库德摩尔、奥托·艾森度、伊万·乔尼凯特、莎莫·芳塔娜、斯科特· 谢泼德、拉马尔·约翰逊、泰勒·艾略特·伯克、安德鲁·斯特林、朱利安·拜利、毛里齐奥·泰拉扎诺、乔什·麦克拉伦、格雷格·洛、塞巴斯蒂安·麦克莱恩、沙维尔·索特洛、凯伦·伊万尼、奥利维耶·拉玛舒、西蒙·阿兰、亚历山大·贝朗格、', '2019', ' 美国', ' 英语', '114分钟', 'dongzuo//38.jpg', '\n                                　　影片剧情围绕X战警中最受欢迎成员之一的琴·葛蕾展开，讲述她逐渐转化为黑凤凰的故事。在一次危及生命的太空营救行动中，琴被神秘的宇宙力量击中，成为最强大的变种人。此后琴·葛蕾不仅要设法掌控日益增长、极不稳定的力量，更要与自己内心的恶魔抗争，她的失控让整个X战警大家庭分崩离析，也让整个星球陷入毁灭的威胁之中。《X战警：黑凤凰》是迄今为止气氛最紧张、情感最丰富的一部《X战警》电影，是《X战警》系列20年来的集大成之作，大家非常熟悉和热爱的变种人大家庭即将面对最为强大的敌人——而她恰恰还是他们中的一员。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrdmmmg8.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (139, '超能陆战队 Big Hero 6', 9, '唐·霍尔、克里斯·威廉姆斯、', '乔丹·罗伯茨、丹尼尔·吉尔森、罗伯特·L·贝尔德、', '斯科特·安第斯、瑞恩·波特、丹尼尔·海尼、T·J·米勒、杰米·钟、小达蒙·韦恩斯、珍尼希斯·罗德里格兹、詹姆斯·克伦威尔、艾伦·图代克、玛娅·鲁道夫、亚布拉哈姆·本鲁比、凯蒂·洛斯、比利·布什、丹尼尔·吉尔森、保罗·布里格斯、', '2014', ' 美国', ' 英语', '102分钟', 'dongzuo//39.jpg', '\n                                　　未来世界的超级都市旧京山（San Fransokyo），热爱发明创造的天才少年小宏，在哥哥泰迪的鼓励下参加了罗伯特·卡拉汉教授主持的理工学院机器人专业的入学大赛。他凭借神奇的微型磁力机器人赢得观众、参赛者以及考官的一致好评，谁知突如其来的灾难却将小宏的梦想和人生毁于一旦。大火烧毁了展示会场，而哥哥为了救出受困的卡拉汉教授命丧火场。身心饱受创伤的小宏闭门不出，哥哥生前留下的治疗型机器人大白则成为安慰他的唯一伙伴。原以为微型机器人也毁于火灾，谁知小宏和大白竟意外发现有人在某座废弃工厂内大批量地生产他的发明。\n                                    \n                                　　稍后哥哥的朋友们弗雷德等人也加入进来，他们穿上小宏发明的超级战士战斗装备，和怀有险恶阴谋的神秘对手展开较量……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrntpmhg.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
@@ -226,7 +225,6 @@ INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `act
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (181, '王牌特工：特工学院 Kingsman: The Secret Service', 8, '马修·沃恩、', '简·古德曼、马修·沃恩、马克·米勒、戴夫·吉布森、', '塔伦·埃格顿、科林·费尔斯、塞缪尔·杰克逊、迈克尔·凯恩、马克·斯特朗、索菲·库克森、索菲亚·波多拉、马克·哈米尔、杰克·达文波特、萨曼塔·沃马克、汉娜·奥斯特罗姆、约诺·戴维斯、亚历克斯·尼科洛夫、维利贝·托皮奇、杰夫·贝尔、艾德里安·奎因顿、乔丹·朗、西奥·巴克利姆-比格斯、摩根·华金斯、拉尔夫·伊内森、爱德华·霍尔克罗夫特、尼古拉斯·班克斯、', '2014', ' 英国 / 美国', ' 英语 / 阿拉伯语 / 瑞典语', '125分钟(中国大陆)', 'dongzuo//81.jpg', '\n                                　　哈里（科林·费斯 Colin Firth 饰）是英国秘密特工组织金士曼中的一员，某次行动中，他的战友不幸牺牲，哈里将一枚徽章和一个电话号码交给了战友年幼的小儿子艾格西（亚历克斯·尼科洛夫 Alex Nikolov 饰），叮嘱他将来如果遇到了什么麻烦可以拨打这个号码，然而，这样的机会只能使用一次。\n                                    \n                                　　一晃眼十七年过去，破碎的家庭让艾格西（塔伦·埃格顿 Taron Egerton 饰）成长为了一个整日无所事事的小混混，某日，因为违反交通规则而遭到逮捕的艾格西使用了手中珍贵的号码，赶来的哈里在艾格西玩世不恭的外表之下发现了他善良的本质和极高的天赋，于是，哈里决定将艾格西培养成为新一代金士曼，他们需要共同面对的是强大而又邪恶的亿万富翁瓦伦丁（塞缪尔·杰克逊 Samuel L. Jackson 饰）。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrnqzc4g.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (182, '神奇女侠 Wonder Woman', 7, '派蒂·杰金斯、', '艾伦·海因伯格、扎克·施奈德、贾森·福克斯、威廉·马斯顿、', '盖尔·加朵、克里斯·派恩、康妮·尼尔森、罗宾·怀特、丹尼·赫斯顿、大卫·休里斯、萨伊德·塔格马奥、艾文·布莱纳、尤金·布雷弗·洛克、露茜·戴维斯、埃伦娜·安纳亚、莉莉·阿斯佩尔、艾米丽·凯里、丽莎·洛文·孔斯利、安·奥戈博莫、杜晨·科洛斯、', '2017', ' 美国 / 中国大陆 / 中国香港', ' 英语', '141分钟', 'dongzuo//82.jpg', '\n                                　　戴安娜（盖尔·加朵 Gal Gadot 饰）是女王希波吕忒（康妮·尼尔森 Connie Nielsen 饰）的女儿，自幼生活在天堂岛上。巨大的屏障将这座岛屿同外界的纷纷扰扰隔开犹如一个世外桃源，而岛上生活着的亦都是女性。在女武官安提奥普（罗宾·莱特 Robin Wright 饰）的教导之下，戴安娜习得了高强的武艺，而她的体内，似乎隐藏着某种强大的未知力量。\n                                    \n                                　　一场意外中，一位名为史蒂夫（克里斯·派恩 Chris Pine 饰）的男子来到了岛上，从他口中，戴安娜得知外面的世界正在经历战争的磨难，而造成这一切的罪魁祸首，是战神阿瑞斯（大卫·休里斯 David Thewlis 饰）。为了拯救人类于水火之中，戴安娜依然拿起了长剑与盾牌，发誓要彻底摧毁阿瑞斯的阴谋。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr7p2u3k.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (183, '死侍 Deadpool', 8, '蒂姆·米勒、', '瑞特·里斯、保罗·韦尼克、法比安·尼切扎、罗伯·莱菲尔德、', '瑞恩·雷诺兹、莫蕾娜·巴卡琳、艾德·斯克林、T·J·米勒、吉娜·卡拉诺、布里安娜·希德布兰德、斯蒂芬·卡皮契奇、莱斯利·格塞斯、杰德·瑞斯、卡兰·索尼、斯坦·李、兰德尔·瑞德、小伊萨克·C.辛格尔顿、', '2016', ' 美国 / 加拿大', ' 英语', '108分钟', 'dongzuo//83.jpg', '\n                                　　油嘴滑舌的雇佣兵韦德·威尔森（瑞恩·雷诺兹 Ryan Reynolds 饰）与俏皮可爱的瓦内莎（莫蕾娜·巴卡林 Morena Baccarin 饰）邂逅，但在爱情最美满的时刻，他被诊断患有晚期癌症，留在世上的时间所剩无几。极度绝望之际，他接受了弗朗西斯（艾德·斯克林 Ed Skrein 饰）私人组织的邀请，对其基因做了改造，以谋求体能的突变。在忍受了一系列的残酷折磨后，韦德终于治好了癌症，蜕变成拥有不死之身的超级战士，但是代价却是失去了人类的面容。\n                                    \n                                　　狡猾的弗朗西斯逃之夭夭，而韦德却无法以恐怖的面容去面对女友。在此之后，他化身死侍，穿梭于每一个黑暗角落，寻找阿贾克斯的踪影……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr7q1s5w.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (184, 'X战警 X-Men', 8, '布莱恩·辛格、', '大卫·海特、', '休·杰克曼、帕特里克·斯图尔特、伊恩·麦克莱恩、法米克·詹森、詹姆斯·麦斯登、哈莉·贝瑞、安娜·帕奎因、雷·帕克、丽贝卡·罗梅恩、布鲁斯·戴维森、', '2000', ' 美国 / 加拿大', ' 英语', '104 分钟', 'dongzuo//84.jpg', '\n                                　　具有特殊能力的一群变种人组成了一个维护世界的小组——X战警小队。成员包括能吸收对方能力的淘气、双眼能放致命射线的镭射眼（詹姆斯·麦斯登（James Marsden饰）、能随意控制气候的暴风女（哈莉•贝瑞 Halle Berry 饰）、具有隔空取物和心电感应能力的琴葛蕾（法米克•詹森 Famke Janssen 饰）…… 不久，金刚狼（休•杰克曼 Hugh Jackman 饰）也出现了。不过金钢狼脾气暴躁、独来独往，X战警小队想极力拉拢他加入队伍，无奈孤傲的金钢狼一时也没有答应。与此同时，能控制一切金属的万磁王此时也在极力拉拢金钢狼，X战警小队不仅要费尽心思对付万磁王，还要小心亦正亦邪的金钢狼。他们能否取得最后的胜利？\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrk1pzik.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (185, '“大”人物', 7, '五百、', '胡蓉蓉、杨苗、郭子圣、', '王千源、包贝尔、王迅、王砚辉、屈菁菁、周游、韩烨洲、盖玥希、刘敏涛、梅婷、潘粤明、乔振宇、景岗山、杜源、高捷、寇占文、刘天佐、马浴柯、霍青、邢瀚卿、李蓓蕾、万沛鑫、张皓然、谢孟伟、姜寒、肖涵、吕晓霖、马京京、黎宇航、成方旭、王子清、王昱涵、王昱淇、郭紫铭、要武、滕根、张奥、', '2019', ' 中国大陆', ' 汉语普通话', '107分钟', 'dongzuo//85.jpg', '\n                                　　名不见经传的小刑警孙大圣（王千源 饰）出生入死在追查案件的第一线，在平凡无奇的一天，他突然听说与之有交情的汽车修理工赵勇强跳楼自杀了。赵勇强此前租住一处拆迁房，但拆迁房一夜被人强拆，他和儿子不仅被赶了出来，连预付的租金都打了水漂。在此之后，赵带着儿子找到地产开发商泰华集团总经理赵泰（包贝尔 饰），结果却遭受了殴打和羞辱。在此之后，孙大圣试图调查此事，却遭到泰华集团乃至警方内部的阻挠，而赵泰试图收买他的行为更激怒了耿直倔强的孙大圣。\n                                    \n                                　　专横跋扈的赵泰为了摆平这件事，不惜采用各种龌龊肮脏的手段，正邪之战正式拉开帷幕……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr6gf1rs.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (186, '蜘蛛侠 Spider-Man', 8, '山姆·雷米、', '大卫·凯普、斯坦·李、史蒂夫·迪特寇、', '托比·马奎尔、威廉·达福、克斯汀·邓斯特、詹姆斯·弗兰科、克里夫·罗伯逊、罗斯玛丽·哈里斯、J·K·西蒙斯、乔·曼根尼罗、格里·贝克尔、比尔·努恩、杰克·贝茨、斯坦利·安德森、罗恩·帕金斯、迈克尔·帕帕约翰、布鲁斯·坎贝尔 、', '2002', ' 美国', ' 英语', '121 分钟', 'dongzuo//86.jpg', '\n                                　　彼得 帕克（托比•马奎尔 Tobey Maguire 饰）只是美国一个平凡的高中生，当一次他被蜘蛛博物馆偷跑出来的变种蜘蛛咬了一口之后，彼得的生活彻底改变了。他变得和蜘蛛一样，拥有各种蜘蛛特有的超能力：从手指喷出粘力极强的蜘蛛丝、飞檐走壁等等。彼得兴奋异常，开始利用自己的超能力去赚钱。但当他最爱的叔叔被自己放走的罪犯杀死后，彼得发誓要用自己的超能力去打击犯罪。\n                                    \n                                　　彼得好友哈利的父亲诺曼（威廉•达福 Willem Dafoe 饰）是一家生物科技公司的老板，因自己公司生产的飞行器没得到军方首脑赏识而苦恼不堪。一次意外诺曼吸入神经毒气而具有了超能力，引发了自身邪恶的本性，骑着自己研发的飞行器去到处破坏、杀人。彼得化身的蜘蛛侠开始出击了！\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrk3rr60.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (187, '金刚狼2 The Wolverine', 7, '詹姆斯·曼高德、', '马克·鲍姆贝克、斯科特·弗兰克、', '休·杰克曼、冈本多绪、福岛莉拉、真田广之、斯维特拉纳·库德钦科娃、布莱恩·泰、山内春彦、法米克·詹森、李威尹、', '2013', ' 美国 / 英国', ' 英语 / 日语', '126分钟', 'dongzuo//87.jpg', '\n                                　　位于加拿大的深山老林，背负着永生之苦的“金刚狼”罗根（休·杰克曼 Hugh Jackman 饰）隐居于此。在一次与猎人的冲突中，他得到东瀛女子雪生（福岛莉拉 饰）的帮助。雪生是罗根二战期间的旧相识矢志田派来的下属，似乎不久于人世的老友渴望死去之间再见罗根一面。跨越重洋的罗根终于见到在虚弱的矢志田，对方希望他能够保护自己的孙女真理子（冈本多绪 饰）。随着老人谢世，葬礼上突然战火点燃。罗根在雪生的帮助下拼死救出真理子，而矢志田的儿子信玄（真田广之 饰）似乎另有所图。逃亡途中，罗根意外发现他丧失了自愈的能力，金刚狼最大的危机降临……\n                                    \n                                　　本片根据弗兰克·米勒（Frank Miller）的原著漫画改编。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrh0wjek.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
@@ -239,7 +237,6 @@ INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `act
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (194, '变形金刚5：最后的骑士 Transformers: The Last Knight', 5, '迈克尔·贝、', '阿特·马库姆、马特·霍洛维、肯·诺兰、阿齐瓦·高斯曼、', '马克·沃尔伯格、伊莎贝拉·莫奈、劳拉·哈德克、安东尼·霍普金斯、乔什·杜哈明、彼特·库伦、约翰·古德曼、斯坦利·图齐、桑地亚哥·卡布瑞拉、吉尔·伯明翰、渡边谦、约翰·迪·马吉欧、弗兰克·维尔克、米彻·佩勒吉、', '2017', ' 美国 / 中国大陆 / 加拿大', ' 英语', '155分钟', 'dongzuo//94.jpg', '\n                                　　汽车人和霸天虎连年不断的战争，给地球带来了莫大的伤害。为此，地球各国联合成立反应部队，针对变形金刚无论正邪一律绞杀。与擎天柱交往甚密的地球人凯德•伊格尔（马克·沃尔伯格 Mark Wahlberg 饰）不顾身边人的反对和政府的压力，以一己之力为大黄蜂、钢锁等汽车人提供庇护场所，期间他无意得到一枚徽章，从而将危机引向自身。失踪的擎天柱飘回赛博坦，被变形金刚的创造者昆塔沙捕获并黑化，命令他返回地球寻找至高无上的权杖，毁灭地球，复兴赛博坦。与此同时，威震天和地球政府达成协议，彼此联合追寻凯德及其盟友的踪迹，其目标同样是曾属于魔法师梅林的权杖。\n                                    \n                                　　地球真正的危机终于降临了……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr0fy0lc.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (195, '少林足球', 8, '周星驰、', '周星驰、曾瑾昌、冯勉恒、冯志强、卢薇、', '周星驰、赵薇、吴孟达、谢贤、莫文蔚、张柏芝、黄一飞、田启文、林子聪、陈国坤、莫美林、林子善、李卉、谷德昭、', '2001', ' 中国香港 / 中国大陆', ' 粤语', '113分钟', 'dongzuo//95.jpg', '\n                                　　二十年前有“黄金右脚”之称，但因一场被师兄强雄设计陷害的比赛而断了右脚自此名誉扫地的明锋（吴孟达）偶然认识了有惊人脚力的星（周星驰），说服了对方练习足球参加不久会举行的全国超级杯足球大赛，星找来曾一同在少林寺习武的一帮师兄弟，并唤醒了他们快被平庸生活消磨光了的潜在斗志，众人经过历练终结成名副其实的“少林队”。阿梅（赵薇）以太极功夫制造馒头，令星十分敬佩与之成了好友，但阿梅不只当星为好友，只因样貌奇丑而自卑一直不敢表露心意。\n                                    \n                                　　“少林队”在全国超级杯足球大赛上屡战屡捷杀进决赛，不想卫冕之战对手竟是强雄（谢贤）所带领的“魔鬼队”，同二十年前一样，强雄再耍阴招令“少林队”节节败退，关键时刻，阿梅现身。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrho3hqc.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (196, '霍比特人2：史矛革之战 The Hobbit: The Desolation of Smaug', 8, '彼得·杰克逊、', 'J·R·R·托尔金、弗兰·威尔士、菲利帕·鲍恩斯、彼得·杰克逊、吉尔莫·德尔·托罗、', '伊恩·麦克莱恩、马丁·弗瑞曼、理查德·阿米蒂奇、本尼迪克特·康伯巴奇、奥兰多·布鲁姆、伊万杰琳·莉莉、李·佩斯、卢克·伊万斯、斯蒂芬·弗雷、肯·斯托特、詹姆斯·内斯比特、约翰·贝尔、马努·贝内特、杰德·布罗菲、亚当·布朗、约翰·凯伦、瑞安·盖奇、马克·哈德洛、彼得·汉布尔顿、斯蒂芬·亨特、威廉·基尔舍、西尔维斯特·迈可伊、格拉汉姆·麦克泰维什、迪恩·奥戈曼、米卡埃尔·佩斯布兰特、艾丹·特纳、', '2013', ' 美国 / 新西兰', ' 英语', '161分钟', 'dongzuo//96.jpg', '\n                                　　距离孤山越来越近，矮人远征军的道路却变得异常艰险。他们躲过了苍白半兽人的不懈追杀，在幽暗密林前和甘道夫（伊恩·麦凯伦 Ian McKellen 饰）兵分两路，后者前往多尔哥多探寻索伦的动向，而霍比特人比尔博·巴金斯（马丁·弗里曼 Martin John C. Freeman 饰）和矮人们先是遭到巨大蜘蛛的袭击，随后又被精灵王子莱戈拉斯（奥兰多·布鲁姆 Orlando Bloom 饰）及其木精灵同伴捕获。比尔博急中生智，利用魔戒救出伙伴，继而引发了木精灵、半兽人和矮人远征军之间精彩纷呈的三方会战。借助巴德（卢克·伊万斯 Luke Evans 饰）的帮助，疲惫的矮人们暂时落脚长湖镇。近在咫尺的孤山城堡，沉睡在财宝中的巨龙即将醒来……\n                                    \n                                　　本片根据J.R.R·托尔金的同名原著改编。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rqz5mp7g.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (197, '功夫熊猫3 Kung Fu Panda 3', 8, '吕寅荣、亚历山德罗·卡罗尼、', '乔纳森·阿贝尔、格伦·伯杰、', '杰克·布莱克、布莱恩·科兰斯顿、达斯汀·霍夫曼、安吉丽娜·朱莉、J·K·西蒙斯、成龙、塞斯·罗根、刘玉玲、大卫·克罗斯、凯特·哈德森、吴汉章、兰德尔·杜克·金、尚格·云顿、斯蒂尔·加尼翁、利亚姆·奈特、韦恩·奈特、芭芭拉·迪里克森、阿尔·罗克、威利·盖斯特、弗雷德·塔特西奥、迈克·米切尔、凯莉·库尼、斯蒂芬·凯林、米克·温格特、蔡明昊、艾普尔·洪、帕克斯·朱莉-皮特、诺克斯·朱莉-皮特、扎哈拉·朱莉-皮特、希洛·朱莉-皮特、', '2016', ' 美国 / 中国大陆', ' 英语', '95分钟', 'dongzuo//97.jpg', '\n                            \n                            \n                        \n                                　　当熊猫阿宝（杰克·布莱克 Jack Black 配音）为成为真正的神龙大侠做准备的时候，他的生父——熊猫李山（布莱恩·科兰斯顿 Bryan Cranston 配音）突然到访。与此同时，拥有神秘力量的反派天煞（J·K·西蒙斯 J.K. Simmons 配音）登场，妄图制服 所有高手，统治武林。相传在与世隔绝的熊猫村有着对抗天煞的力量，为了拯救苍生，阿宝与父亲踏上了归途，而阿宝的好伙伴悍娇虎（安吉丽娜·朱莉 Angelina Jolie 配音）、金猴（成龙 配音）、灵蛇（刘玉玲 Lucy Liu 配音）、螳螂（塞斯·罗根 Seth Rogen 配音）则一同拖延天煞，阿宝不仅肩负着成为真正的熊猫大侠的使命，还要让村民美美（凯特·哈德森 Kate Hudson 配音）等新伙伴练就新功夫，继承乌龟大师（兰德尔·杜克·金 Randall Duk Kim 配音）的遗志，共同抵挡天煞。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrkv5504.html%3Fvfm%3Dm_331_dbdy&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (198, '黑衣人：全球追缉 Men in Black International', 6, 'F·加里·格雷、', '劳威尔·坎宁安 、马特·霍洛维、阿特·马库姆、', '克里斯·海姆斯沃斯、泰莎·汤普森、丽贝卡·弗格森、库梅尔·南贾尼、拉菲·斯波、艾玛·汤普森、连姆·尼森、戴维娜·西塔拉姆、纳西尔·贾玛、维克托里娅·菲斯、佩内洛普·卡普迪雅、斯蒂芬·怀特、安纳托·陶布曼、露丝·霍洛克斯、贝恩·科拉科、马西·哈里尔、希滕·珀泰尔、通恰伊·古奈什、艾德里安·阿尔瓦拉多、史蒂芬·萨姆森、曼迪娅·弗罗里、黄渤、伊隆·马斯克、', '2019', ' 美国', ' 英语', '115分钟', 'dongzuo//98.jpg', '\n                                　　全球最具影响力的经典科幻IP《黑衣人》全面升级！科幻电影之父史蒂文·斯皮尔伯格联手《速度与激情8》导演F·加里·格雷，金牌班底鼎力巨献！英国黑衣人总部王牌探员H（锤哥）与新晋探员M（泰莎·汤普森）在阻止外星团伙入侵的过程中意外铲除了隐藏在黑衣人组织中的内奸，成功拯救世界 。\n                                    \n                                　　影片中，各种脑洞大开的外星人和颠覆想象的高科技装备轮番登场，热血沸腾惊心动魄的动作追车场面层出不穷，完美构建出全新的黑衣人宇宙观。本片将于2019年6月14日内地同步北美上映。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rqtdg0uw.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (199, '加勒比海盗2：聚魂棺 Pirates of the Caribbean: Dead Man\'s Chest', 8, '戈尔·维宾斯基、', 'Ted Elliott、特里·鲁西奥、Stuart Beattie、Jay Wolpert、', '约翰尼·德普、奥兰多·布鲁姆、凯拉·奈特莉、杰克·达文波特、比尔·奈伊、乔纳森·普雷斯、', '2006', ' 美国', ' 英语 / 土耳其语 / 希腊语', '151 分钟', 'dongzuo//99.jpg', '\n                                　　迷人的杰克（约翰尼•戴普 饰）船长又回来了，这次，他遇到了更为强大的敌人——传说中的不死人大卫•琼斯(比尔•奈伊 饰)，他驾驶着让人恐惧的“飞行荷兰人”号快船，在速度与装备上，没有任何船能够超越它。杰克船长欠下琼斯一个血债，他必须赶在最后时限到来之前，找到破解的方法，否则他会永远背负血债，并且在余生永远成为琼斯的奴隶。\n                                    \n                                　　当然，杰克船长的好朋友威尔•特纳（奥兰多•布鲁姆 饰）也被卷入了他的坏运气当中。因为杰克，威尔和伊丽莎白（凯拉•奈特莉 饰）的婚礼被迫取消，伊丽莎白还被关进了监狱，威尔为了救她，只能去寻找杰克。\n                                    \n                                　　这次两个好朋友遇到了巨大神秘的海洋怪物、不友善的小岛土著、打扮华丽的占卜者戴尔玛，威尔失散多年的父亲--“拉靴带”比尔•特纳(斯特兰•斯卡斯加德)在关键时刻离奇现身，成为全局的转折点……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrjcdxnc.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (200, '霍比特人3：五军之战 The Hobbit: The Battle of the Five Armies', 8, '彼得·杰克逊、', '弗兰·威尔士、菲利帕·鲍恩斯、彼得·杰克逊、吉尔莫·德尔·托罗、J·R·R·托尔金、', '马丁·弗瑞曼、伊恩·麦克莱恩、理查德·阿米蒂奇、伊万杰琳·莉莉、李·佩斯、卢克·伊万斯、本尼迪克特·康伯巴奇、肯·斯托特、詹姆斯·内斯比特、比利·康诺利、凯特·布兰切特、伊安·霍姆、克里斯托弗·李、雨果·维文、奥兰多·布鲁姆、马努·贝内特、艾丹·特纳、迪恩·奥戈曼、格拉汉姆·麦克泰维什、斯蒂芬·弗雷、米卡埃尔·佩斯布兰特、', '2014', ' 美国 / 新西兰', ' 英语', '144分钟', 'dongzuo//100.jpg', '\n                            \n                            \n                        \n                                　　被吵醒的史矛革大闹长湖镇，最终为人类巴德（卢克·伊万斯 Luke Evans 饰）射杀。索林·橡木盾（理查德·阿米蒂奇 Richard Armitage 饰）多年的夙愿终于实现，孤山埃尔波尔重新回到矮人手中。然而这位矮人王子仿佛被史矛革的贪婪和堆成山的黄金迷惑了心窍，他 疯狂地搜寻象征王位的阿肯宝石，不仅撕毁了付给长湖镇报酬的约定，更拒绝了精灵王（李·佩斯 Lee Pace 饰）索要本族国宝的要求，为此导致三族的战争一触即发。与此同时，苍白半兽人阿索格率领大军浩浩荡荡向孤山逼近。得知消息的灰袍巫师甘道夫（伊恩·麦凯伦 Ian McKellen 饰）从中调停斡旋，而被索林视为唯一朋友的霍比特人比尔博·巴金斯（马丁·弗里曼 Martin John C. Freeman 饰）则掌握着中土命运的关键。五军会战，爆发在即！\n                                    \n                                　　本片根据J.R.R·托尔金的同名原著改编，为霍比特人系列的最后一部。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rqz2np2w.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Action');
@@ -251,12 +248,10 @@ INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `act
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (206, '唐人街探案2', 7, '陈思诚、', '陈思诚、', '王宝强、刘昊然、肖央、刘承羽、尚语贤、王迅、妻夫木聪、迈克尔·皮特、白灵、元华、曾江、王成思、杨金赐、范湉湉、佟丽娅、陈思诚、', '2018', ' 中国大陆', ' 汉语普通话', '121分钟', 'fanzui//6.jpg', '\n                                　　唐仁（王宝强 饰）为巨额奖金欺骗秦风（刘昊然 饰）到纽约参加世界名侦探大赛，然而随着和世界各国侦探们啼笑皆非的较量，两人却发现了隐藏在这次挑战背后的更大秘密...\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr839kro.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (207, '无间道 無間道', 9, '刘伟强、麦兆辉、', '麦兆辉、庄文强、', '刘德华、梁朝伟、黄秋生、曾志伟、郑秀文、陈慧琳、陈冠希、余文乐、杜汶泽、林家栋、萧亚轩、', '2002', ' 中国香港', ' 粤语', '101分钟', 'fanzui//7.jpg', '\n                                　　1991年，香港黑帮三合会会员刘健明（刘德华）听从老大韩琛（曾志伟）的吩咐，加入警察部队成为黑帮卧底，韩琛许诺刘健明会帮其在七年后晋升为见习督察。1992年，警察训练学校优秀学员陈永仁（梁朝伟）被上级要求深入到三合会做卧底，终极目标是成为韩琛身边的红人。2002年，两人都不负重望，也都身背重压，刘健明渐想成为一个真正的好人，陈永仁则盼着尽快回归警察身份。\n                                    \n                                　　重案组从陈永仁手中获悉一批毒品交易情报，锁紧目标人物韩琛，没料情报被刘健明泄出，双方行动均告失败。但此事将双方均有卧底的事实暴露，引发双方高层清除内鬼的决心。命运迥异又相似的刘健明和陈永仁开始在无间道的旅程中接受严峻考验。\n                        ', 'https://www.douban.com/link2/?url=https%3A%2F%2Fwww.iqiyi.com%2Fv_19rrjefg34.html&subtype=9&type=online-video', 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (208, '使徒行者2：谍影行动', 6, '文伟鸿、', '关皓月、', '张家辉、古天乐、吴镇宇、姜珮瑶、张亦驰、刘宇宁、黄志忠、蔡洁、马德钟、袁伟豪、陈山聪、王君馨、张宝儿、江嘉敏、李忠希、刘楚恬、欧瑞伟、郑启泰、黄祥兴、徐荣、林伟、吴瑞庭、卫志豪、黎振烨、汤洛雯、许绍雄、关婉珊、', '2019', ' 中国大陆 / 中国香港', ' 粤语 / 汉语普通话', '98分钟', 'fanzui//8.jpg', '\n                                　　童年兄弟意外失散，30年后因一桩罪案相见，两人已身处不同阵营。随着对罪案调查的深入，一个多年来隐于幕后的恐怖组织渐渐浮出水面。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rsjg342w.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Crime');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (209, '功夫', 8, '周星驰、', '曾瑾昌、陈文强、周星驰、霍昕、', '周星驰、元秋、元华、黄圣依、梁小龙、陈国坤、田启文、林子聪、林雪、冯克安、释彦能、冯小刚、袁祥仁、张一白、赵志凌、董志华、何文辉、陈凯师、贾康熙、林子善、任珈锐、王仕颖、', '2004', ' 中国大陆 / 中国香港', ' 粤语 / 汉语普通话 / 手语', '100分钟(3D重映)', 'fanzui//9.jpg', '\n                                　　1940年代的上海，自小受尽欺辱的街头混混阿星（周星驰）为了能出人头地，可谓窥见机会的缝隙就往里钻，今次他盯上行动日益猖獗的黑道势力“斧头帮”，想借之大名成就大业。\n                                    \n                                　　阿星假冒“斧头帮”成员试图在一个叫“猪笼城寨”的地方对居民敲诈，不想引来真的“斧头帮”与“猪笼城寨”居民的恩怨。“猪笼城寨”原是藏龙卧虎之处，居民中有许多身怀绝技者（元华、梁小龙等），他们隐藏于此本是为远离江湖恩怨，不想麻烦自动上身，躲都躲不及。而在观战正邪两派的斗争中，阿星逐渐领悟功夫的真谛。\n                        ', NULL, 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (210, '蝙蝠侠：黑暗骑士 The Dark Knight', 9, '克里斯托弗·诺兰、', '乔纳森·诺兰、克里斯托弗·诺兰、大卫·S·高耶、', '克里斯蒂安·贝尔、希斯·莱杰、艾伦·艾克哈特、迈克尔·凯恩、玛吉·吉伦哈尔、加里·奥德曼、摩根·弗里曼、莫尼克·加布里埃拉·库尔内、罗恩·迪恩、基里安·墨菲、黄经汉、内斯特·卡博内尔、埃里克·罗伯茨、里特奇·科斯特、安东尼·迈克尔·豪尔、基斯·斯扎拉巴基克、柯林·麦克法兰、约书亚·哈尔托、美琳达·麦格劳、内森·甘宝、迈克尔·维约、迈克尔·斯托扬诺夫、威廉·斯米利、丹尼·高德林、迈克尔·加·怀特、马修·奥尼尔、威廉·菲克纳、欧鲁米基·欧拉乌米、格雷格·比姆、爱利克·赫尔曼、毕崔斯·罗森、文森佐·尼克力、陈冠希、', '2008', ' 美国 / 英国', ' 英语 / 汉语普通话', '152分钟', 'fanzui//10.jpg', '\n                            \n                            \n                        \n                                　　从亲眼目睹父母被人杀死的阴影中走出来的“蝙蝠侠”，经历了成长之后，已经不再是那个桀骜不的孤单英雄了。在警官吉姆·戈登和检查官哈维·登特的通力帮助下，“蝙蝠侠”无后顾之忧地继续满世界的奔波，与日益增长起来的犯罪威胁做着永无休止的争斗，而他所在的高谭市，也是进展最为明显的地方，犯罪率以一种惊人的速度持续下降着，毕竟对方是能够上天入地的“蝙蝠侠”，不借两个胆子谁还敢造次呢？不过像高谭这种科技与污秽并存的城市，平静是不可能维持太久的，果不其然，新一轮的混乱很快就席卷了整个城市，人们再一被被恐慌所笼罩着，而声称愿意为这一切负责的，自然就是所有混乱的源头以及支配者--“小丑”了。\n                                    \n                                　　先不管“小丑”掀起一个又一个犯罪的狂潮的最终目的为何，他的企图都是邪恶的，所作所为更是早就危害到了高谭市民的正常生活……其中自然包括了“蝙蝠侠”身边几个非常重要的人，而他需要做的，就是将这股新的危机全部亲自用手捏得粉碎。然而在面对着这个有史以来最具针对性、最恶毒的对手时，“蝙蝠侠”却不得不从他的地下军械库里搬出每一件能够用得上的高科技武器，还得时刻纠结着为他曾经信仰的一切寻找答案。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rra6zong.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (211, '看不见的客人 Contratiempo', 9, '奥里奥尔·保罗、', '奥里奥尔·保罗、', '马里奥·卡萨斯、阿娜·瓦格纳、何塞·科罗纳多、巴巴拉·莱涅、弗兰塞斯克·奥雷利亚、帕科·图斯、大卫·塞尔瓦斯、伊尼戈·加斯特西、圣·耶拉莫斯、马内尔·杜维索、布兰卡·马丁内斯、佩雷·布拉索、霍尔迪·布鲁内特、鲍比·冈萨雷斯、玛蒂娜·乌尔塔多、', '2016', ' 西班牙', ' 西班牙语', '106分钟', 'fanzui//11.jpg', '\n                                　　艾德里安（马里奥·卡萨斯 Mario Casas 饰）经营着一间科技公司，事业蒸蒸日上，家中有美丽贤惠的妻子和活泼可爱的女儿，事业家庭双丰收的他是旁人羡慕的对象。然而，野心勃勃的艾德里安并未珍惜眼前来之不易的生活，一直以来，他和一位名叫劳拉（芭芭拉·蓝妮 Bárbara Lennie 饰）的女摄影师保持着肉体关系。\n                                    \n                                　　某日幽会过后，两人驱车离开别墅，却在路上发生了车祸，为了掩盖事件的真相，两人决定将在车祸中死去的青年丹尼尔联同他的车一起沉入湖底。之后，劳拉遇见了一位善良的老人，老人将劳拉坏掉的车拉回家中修理，然而，令劳拉没有想到的是，这位老人，竟然就是丹尼尔的父亲。\n                        ', NULL, 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (212, '调音师 Andhadhun', 8, '斯里兰姆·拉格万、', '阿里吉特·比斯沃斯、约戈什·查德卡尔、斯里兰姆·拉格万、赫曼斯·饶、普哈·拉达·瑟蒂、奥利维耶·特雷内 、', '阿尤斯曼·库拉纳、塔布、拉迪卡·艾普特、安尔·德霍万、马纳夫·维吉、阿什维尼·卡尔塞卡、查亚·卡达姆、萨基尔·侯赛因、拉什米·阿格德卡、莫希尼·凯瓦拉曼、', '2018', ' 印度', ' 印地语', '139分钟', 'fanzui//12.jpg', '\n                                　　双目失明的钢琴家阿卡什（阿尤斯曼·库拉纳 Ayushmann Khurrana 饰）为了参加国际大赛，平日里通过私人授课赚取经费。事实上他的眼睛完全正常，只不过希望通过这种方式感受不同的生活。因为一场意外，阿卡什结识了美丽的姑娘苏菲（拉迪卡·艾普特 Radhika Apte 饰）。凭借出色的演奏技巧，阿卡什在苏菲父亲经营的西餐馆谋得兼职。他的演奏不仅令食客们倾倒，更虏获了苏菲的心。某天，阿卡什接受过气的影星普拉默（安尔·德霍万 Anil Dhawan 饰）的邀请，登门为对方的妻子西米（塔布 Tabu 饰）演奏庆生，谁知却亲眼目睹了倒在血泊中的普拉默的尸体。惊慌失措的阿卡什假装镇定，虽然暂时骗过了西米及其情夫，但是他的秘密还是慢慢被人戳穿……\n                                    \n                                　　本片改编自2010年的同名法国高分悬疑短片。\n                        ', 'https://www.douban.com/link2/?url=https%3A%2F%2Fwww.iqiyi.com%2Fv_19rqq17jbc.html&subtype=9&type=online-video', 'Crime');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (213, '无双 無雙', 8, '庄文强、', '庄文强、', '周润发、郭富城、张静初、冯文娟、廖启智、周家怡、王耀庆、方中信、高捷、邢佳栋、张松枝、张建声、吴嘉龙、孙佳君、', '2018', ' 中国大陆 / 中国香港', ' 汉语普通话 / 粤语 / 英语 / 泰语 / 波兰语', '130分钟', 'fanzui//13.jpg', '\n                                　　身陷囹圄的李问（郭富城 饰）被引渡回港，他原本隶属于一个的跨国假钞制贩组织。该组织曾犯下过多宗恶性案件，而首脑“画家”不仅始终逍遥法外，连真面目都没人知道。为了逼迫李问吐露“画家”真实身份，警方不惜用足以判死刑的假罪证使其就范。就在此时，富有的遗孀阮文（张静初 饰）申请保释李问，而警方提出的条件依然是“画家”的真面目。\n                                    \n                                　　原来早在十数年前，李问和阮文是一对画家情侣，无奈女友的作品受人青睐，李问的画作却被贬得一文不值。就在此困顿期间，他制作假画的才能被“画家”（周润发 饰）发掘，进而成为对方美元假币团伙中的一员……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrdgdwpg.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Crime');
-INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (214, '天才枪手 ฉลาดเกมส์โกง', 8, '纳塔吾·彭皮里亚、', '塔妮达·汉塔维瓦塔娜、瓦苏红·皮娅罗姆娜、纳塔吾·彭皮里亚、', '茱蒂蒙·琼查容苏因、查侬·散顶腾古、依莎亚·贺苏汪、披纳若·苏潘平佑、塔内·瓦拉库努娄、莎琳雷特·托马斯、伊戈·米基塔斯、帕辛·宽萨塔彭、萨哈贾克·波斯安吉特、坎嘉娜·维耐潘尼、育塔彭·瓦拉努科洛楚、诺帕瓦特·里基特王、', '2017', ' 泰国', ' 泰语 / 英语', '130分钟', 'fanzui//14.jpg', '\n                                　　影片根据2014年轰动一时的亚洲考场作弊案改编，讲述了天才学霸利用高智商考场作弊牟取暴利的故事。出生平凡的天才少女Lynn（茱蒂蒙·琼查容苏因 饰）在进入贵族学校后，结识了富二代同学Grace（依莎亚·贺苏汪饰）与Pat（披纳若·苏潘平佑饰），从此开始了考场作弊生涯，与此同时，另一名记忆力极佳的天才学霸Bank（查侬·散顶腾古 饰）发现了Lynn不为人知的“交易”。经过多场险象环生的“作弊战争”后，Lynn接下最后一单在国际考场上为富家子弟作弊的天价委托。一场横跨两大洲的完美作弊方案横空出世，然而一切并不像他们想的那么简单……\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rr8gnyzo.html%3Fvfm%3Dm_331_dbdy&subtype=9&type=online-video', 'Crime');
+INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (213, 'test_animation', 10, 'gdai', 'gdai', 'gdai', '2022', 'fr', 'cn', '110', NULL, 'Movie test : Animation', 'https://www.imdb.com/', 'Animation');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (215, '疯狂的石头', 8, '宁浩、', '张承、宁浩、岳小军、', '郭涛、刘桦、连晋、黄渤、徐峥、优恵、罗兰 、王迅、', '2006', ' 中国大陆 / 中国香港', ' 汉语普通话 / 重庆话', '106 分钟(香港)', 'fanzui//15.jpg', '\n                                　　重庆一间工艺品厂已经濒临倒闭，却不料在拆倒旧厂房的时候，发现了厕所里的一件宝物——一块价值连城的翡翠。厂里决定用这块翡翠举办一个展览，赚些钱发拖欠了几个月的工人工资。期间由工艺品厂保卫科长包世宏（郭涛 饰）负责看守这件宝物。但是，国际大盗麦克与本地一帮小偷却让包世宏一筹莫展，他们各施其技接近翡翠，展览馆开始了一场明争暗斗的较量。黑色幽默也开始幕幕上演。翡翠的价值几何？最后谁是胜出者？事情远没有表面那么简单……\n                        ', NULL, 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (216, '老炮儿', 8, '管虎、', '管虎、董润年、', '冯小刚、许晴、张涵予、刘桦、李易峰、吴亦凡、梁静、白举纲、于和伟、连奕名、尚语贤、鲁诺、管宗祥、尹力、余皑磊、宁浩、江珊、张译、郭京飞、张鲁一、赵毅、梁天、张一山、王俊凯、王源、易烊千玺、巴图、', '2015', ' 中国大陆', ' 汉语普通话', '137分钟(中国大陆)', 'fanzui//16.jpg', '\n                                　　老炮儿在北京话中，专指提笼遛鸟，无所事事的老混混儿。\n                                    \n                                　　六爷（冯小刚 饰）就曾是“横行”老北京的老炮儿之一，如今过着悠闲自得的日子，却不想自己的儿子晓波（李易峰 饰）被卷入了与“小爷”小飞（吴亦凡 饰）的纠纷中。六爷试图出面摆平这起纠纷，并找来了昔日老友闷三儿（张涵予 饰 ）、话匣子（许晴 饰）、灯罩儿（刘桦 饰）帮忙，却发现这个时代已经有了一群新的“话事人”，自己这个顽主的江湖地位已经动摇，并且以往固守的生活方式已经渐渐被时代所抛弃，廉颇老矣尚能饭否？\n                        ', NULL, 'Crime');
 INSERT INTO `allmovies` (`id`, `name`, `score`, `director`, `scriptwriter`, `actor`, `years`, `country`, `languages`, `length`, `image`, `des`, `url`, `type`) VALUES (217, '教父 The Godfather', 9, '弗朗西斯·福特·科波拉、', '马里奥·普佐、弗朗西斯·福特·科波拉、', '马龙·白兰度、阿尔·帕西诺、詹姆斯·肯恩、理查德·卡斯特尔诺、罗伯特·杜瓦尔、斯特林·海登、约翰·马利、理查德·康特、艾尔·勒提埃里、黛安·基顿、阿贝·维高达、塔莉娅·夏尔、吉亚尼·罗素、约翰·凯泽尔、鲁迪·邦德、兰尼·蒙大拿、', '1972', ' 美国', ' 英语 / 意大利语 / 拉丁语', '175 分钟', 'fanzui//17.jpg', '\n                                　　40年代的美国，“教父”维托·柯里昂（马龙·白兰度 饰）是黑手党柯里昂家族的首领，带领家族从事非法的勾当，但同时他也是许多弱小平民的保护神，深得人们爱戴。\n                                    \n                                　　因为拒绝了毒枭索洛索的毒品交易要求，柯里昂家族和纽约其他几个黑手党家族的矛盾激化。圣诞前夕，索洛索劫持了“教父”的参谋汤姆，并派人暗杀“教父”；因为内奸的出卖，“教父”的大儿子逊尼被仇家杀害；小儿子麦克（阿尔·帕西诺 饰）也被卷了进来，失去爱妻。黑手党家族之间的矛盾越来越白热化。\n                                    \n                                　　年老的“教父”面对丧子之痛怎样统领全局？黑手党之间的仇杀如何落幕？谁是家族的内奸？谁又能够成为新一代的“教父”？\n                                    \n                                　　血雨腥风和温情脉脉，在这部里程碑式的黑帮史诗巨片里真实上演。\n                        ', 'https://www.douban.com/link2/?url=http%3A%2F%2Fwww.iqiyi.com%2Fv_19rrg3726w.html%3Fvfm%3Dm_331_dbdy%26fv%3D4904d94982104144a1548dd9040df241&subtype=9&type=online-video', 'Crime');
@@ -1000,7 +995,7 @@ CREATE TABLE `clicknumber` (
 BEGIN;
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('2001太空漫游 2001: A Space Odyssey', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('2012', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('Ne Zha 哪吒之魔童降世', 152);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('Ne Zha 哪吒之魔童降世', 224);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('V字仇杀队 V for Vendetta', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('X战警 X-Men', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('X战警2 X2', 104);
@@ -1078,7 +1073,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('加勒比海盗3：�
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('加勒比海盗4：惊涛怪浪 Pirates of the Caribbean: On Stranger Tides', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('加勒比海盗5：死无对证 Pirates of the Caribbean: Dead Men Tell No Tales', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('动物世界', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('千与千寻 千と千尋の神隠し', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('千与千寻 千と千尋の神隠し', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('千机变', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('午夜凶铃 リング', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('华尔街之狼 The Wolf of Wall Street', 104);
@@ -1091,7 +1086,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('变形金刚4：绝�
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('变形金刚5：最后的骑士 Transformers: The Last Knight', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('变脸 Face/Off', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('可可西里', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('名侦探柯南：绀青之拳 名探偵コナン 紺青の拳', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('名侦探柯南：绀青之拳 名探偵コナン 紺青の拳', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('名侦探柯南：贝克街的亡灵 名探偵コナン ベイカー街の亡霊', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('名侦探柯南：通向天国的倒计时 名探偵コナン 天国へのカウントダウン', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('名侦探柯南：零的执行人 名探偵コナン ゼロの執行人', 104);
@@ -1166,9 +1161,9 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('寒战2 寒戰II', 10
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('寻梦环游记 Coco', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('寻龙诀', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('射雕英雄传之东成西就 射鵰英雄傳之東成西就', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小丑 Joker', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小丑 Joker', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小丑回魂 It', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小丑回魂2 It: Chapter Two', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小丑回魂2 It: Chapter Two', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小偷家族 万引き家族', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小姐 아가씨', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('小岛惊魂 The Others', 104);
@@ -1206,7 +1201,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('忌日快乐 Happy De
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('忌日快乐2 Happy Death Day 2U', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('忠犬八公的故事 Hachi: A Dog\'s Tale', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('快把我哥带走', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('怦然心动 Flipped', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('怦然心动 Flipped', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('怪兽大学 Monsters University', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('怪兽电力公司 Monsters, Inc.', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('怪物史瑞克 Shrek', 104);
@@ -1222,7 +1217,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('惊奇队长 Captain 
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('惊情四百年 Dracula', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('惊魂记 Psycho', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('愤怒的小鸟2 The Angry Birds Movie 2', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('我不是药神', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('我不是药神', 106);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('我和我的祖国', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('我左眼见到鬼', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('我是传奇 I Am Legend', 104);
@@ -1324,14 +1319,14 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('烈日灼心', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('烈火英雄', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('燃烧 버닝', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('爱宠大机密 The Secret Life of Pets', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('爱宠大机密2 The Secret Life of Pets 2', 105);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('爱宠大机密2 The Secret Life of Pets 2', 106);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('爱情公寓', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('爵迹', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('犯罪现场 犯罪現場', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('狄仁杰之四大天王', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('狄仁杰之神都龙王', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('狄仁杰之通天帝国', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('狮子王 The Lion King', 108);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('狮子王 The Lion King', 113);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('猫鼠游戏 Catch Me If You Can', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('王牌特工：特工学院 Kingsman: The Secret Service', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('玛丽和马克思 Mary and Max', 104);
@@ -1357,7 +1352,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('电锯惊魂7 Saw 3D:
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('电锯惊魂8：竖锯 Jigsaw', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('画皮 畫皮', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('画皮2 畫皮Ⅱ', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疯狂动物城 Zootopia', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疯狂动物城 Zootopia', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疯狂原始人 The Croods', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疯狂的外星人', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疯狂的石头', 104);
@@ -1365,7 +1360,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疾速备战 John Wic
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疾速特攻 John Wick: Chapter 2', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('疾速追杀 John Wick', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('白日焰火', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('白蛇：缘起', 109);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('白蛇：缘起', 111);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('盗梦空间 Inception', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('盲探', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('看不见的客人 Contratiempo', 104);
@@ -1408,7 +1403,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('续命之徒：绝命
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('绿皮书 Green Book', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('绿里奇迹 The Green Mile', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('网络谜踪 Searching', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('罗小黑战记', 117);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('罗小黑战记', 126);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('罗曼蒂克消亡史', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('罗生门 羅生門', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('罗马假日 Roman Holiday', 104);
@@ -1427,7 +1422,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('肖申克的救赎 Th
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('致命ID Identity', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('致命魔术 The Prestige', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('航海王之黄金城 ONE PIECE FILM GOLD', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('航海王：狂热行动 ONE PIECE STAMPEDE', 107);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('航海王：狂热行动 ONE PIECE STAMPEDE', 109);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('花木兰 Mulan', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('芳华', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('英伦对决 The Foreigner', 104);
@@ -1477,7 +1472,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('超时空同居', 104
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('超能陆战队 Big Hero 6', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('辛德勒的名单 Schindler\'s List', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('达·芬奇密码 The Da Vinci Code', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('这个杀手不太冷 Léon', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('这个杀手不太冷 Léon', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('迷雾 The Mist', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('追龙 追龍', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('追龙Ⅱ 追龍2：賊王', 104);
@@ -1537,7 +1532,7 @@ INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('马达加斯加 Madag
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('马达加斯加的企鹅 Penguins of Madagascar', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驯龙高手 How to Train Your Dragon', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驯龙高手2 How to Train Your Dragon 2', 104);
-INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驯龙高手3 How To Train Your Dragon: The Hidden World', 104);
+INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驯龙高手3 How To Train Your Dragon: The Hidden World', 105);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驱魔人 The Exorcist', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('驴得水', 104);
 INSERT INTO `clicknumber` (`movieName`, `number`) VALUES ('高草丛中 In the Tall Grass', 104);
@@ -1569,15 +1564,19 @@ CREATE TABLE `collection` (
 -- Records of collection
 -- ----------------------------
 BEGIN;
-INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '犯罪现场 犯罪現場', '2019-12-12 15:16:32');
-INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '疯狂动物城 Zootopia', '2019-12-12 15:16:32');
-INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '罗小黑战记', '2019-12-12 15:17:03');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('', '疯狂动物城 Zootopia', '2022-05-25 10:34:14');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gdai', 'Ne Zha 哪吒之魔童降世', '2022-05-25 11:33:21');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gdai', '我不是药神', '2022-05-25 10:36:03');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gdai', '疯狂动物城 Zootopia', '2022-06-01 09:16:26');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '犯罪现场 犯罪現場', '2022-05-12 15:16:32');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '疯狂动物城 Zootopia', '2022-05-12 15:16:32');
+INSERT INTO `collection` (`userName`, `movieName`, `addTime`) VALUES ('gg', '罗小黑战记', '2022-05-12 15:16:32');
 COMMIT;
 
 -- ----------------------------
 -- Table structure for comments
 -- ----------------------------
-DROP TABLE IF EXISTS `cocmments`;
+DROP TABLE IF EXISTS `comments`;
 CREATE TABLE `comments` (
   `userName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户ID',
   `movieName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '电影ID',
@@ -1589,23 +1588,27 @@ CREATE TABLE `comments` (
 -- Records of comments
 -- ----------------------------
 BEGIN;
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[嘻嘻][哆啦A梦微笑]', '2019-12-05 21:54:38');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[黑寡妇][蜘蛛侠]蜘蛛侠Spider Man', '2019-12-05 22:02:28');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '你们好2333[伤心]', '2019-12-05 22:13:05');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[吐][打脸]', '2019-12-05 22:19:44');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[猪头]', '2019-12-05 22:19:57');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[奇异博士]', '2019-12-06 13:17:53');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[泪][喵喵]', '2019-12-06 13:18:00');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[吃瓜]', '2019-12-06 13:18:04');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[哈哈]', '2019-12-06 17:49:12');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[汗]', '2019-12-07 23:55:43');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('mm', 'Ne Zha 哪吒之魔童降世', '你好啊[黑线]', '2019-12-08 12:53:21');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('mm', 'Ne Zha 哪吒之魔童降世', '[害羞]', '2019-12-08 17:05:46');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[鼓掌]', '2019-12-08 18:10:48');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[黑线] 2019/12/9', '2019-12-09 11:07:33');
-INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('123', '玩具总动员4 Toy Story 4', 'nice', '2019-12-15 22:58:41');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[嘻嘻][哆啦A梦微笑]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[黑寡妇][蜘蛛侠]蜘蛛侠Spider Man', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '你们好2333[伤心]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[吐][打脸]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[猪头]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[奇异博士]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[泪][喵喵]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[吃瓜]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[哈哈]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[汗]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('mm', 'Ne Zha 哪吒之魔童降世', '你好啊[黑线]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('mm', 'Ne Zha 哪吒之魔童降世', '[害羞]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[鼓掌]', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gg', 'Ne Zha 哪吒之魔童降世', '[黑线] 2019/12/9', '2022-05-03 13:35:12');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('123', '玩具总动员4 Toy Story 4', 'nice', '2022-05-03 13:35:12');
 INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('123', '罗小黑战记', '123', '2022-05-01 15:57:34');
 INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('123', '航海王：狂热行动 ONE PIECE STAMPEDE', '', '2022-05-01 17:19:55');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('admin', 'Ne Zha 哪吒之魔童降世', 'test', '2022-05-20 14:38:17');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gdai', 'Ne Zha 哪吒之魔童降世', 'I like it![笑cry]', '2022-05-20 16:00:11');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('admin', 'Ne Zha 哪吒之魔童降世', 'Demo. for adding a comment[笑cry]', '2022-05-22 14:38:07');
+INSERT INTO `comments` (`userName`, `movieName`, `description`, `addTime`) VALUES ('gdai', 'Ne Zha 哪吒之魔童降世', 'test[微笑]', '2022-06-01 14:16:59');
 COMMIT;
 
 -- ----------------------------
@@ -1623,43 +1626,37 @@ CREATE TABLE `history` (
 -- Records of history
 -- ----------------------------
 BEGIN;
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 0, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 5, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 1, '2022-05-13 10:29:51');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 9, '2022-05-01 15:21:33');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('V字仇杀队 V for Vendetta', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('X战警 X-Men', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('加勒比海盗2：聚魂棺 Pirates of the Caribbean: Dead Man\'s Chest', 1, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('名侦探柯南：绀青之拳 名探偵コナン 紺青の拳', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('Ne Zha 哪吒之魔童降世', 15, '2022-05-20 15:59:27');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('test_animation', 1, '2022-06-01 15:06:55');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('千与千寻 千と千尋の神隠し', 1, '2022-05-25 10:29:46');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('名侦探柯南：绀青之拳 名探偵コナン 紺青の拳', 1, '2022-05-13 11:02:01');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('哆啦A梦：伴我同行 STAND BY ME ドラえもん', 9, '2022-05-01 19:51:33');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('唐人街探案2', 3, '2019-12-12 15:16:11');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('复仇者联盟3：无限战争 Avengers: Infinity War', 9, '2022-05-01 15:49:20');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('大侦探皮卡丘 Pokémon Detective Pikachu', 3, '2019-12-12 15:16:11');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('大侦探皮卡丘 Pokémon Detective Pikachu', 9, '2022-05-01 18:01:58');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('小丑 Joker', 1, '2022-06-01 15:04:12');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('小丑回魂2 It: Chapter Two', 1, '2022-05-22 14:36:17');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('小丑回魂2 It: Chapter Two', 9, '2022-05-01 16:01:17');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('我和我的祖国', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('怦然心动 Flipped', 15, '2022-06-01 13:16:05');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('我不是药神', 1, '2022-05-25 10:09:39');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('我不是药神', 15, '2022-05-25 11:32:04');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('我，机器人 I, Robot', 9, '2022-05-01 19:51:25');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('摔跤吧！爸爸 Dangal', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('火星救援 The Martian', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('爱宠大机密2 The Secret Life of Pets 2', 3, '2019-12-12 15:16:11');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('爱宠大机密2 The Secret Life of Pets 2', 9, '2022-05-01 18:11:01');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('狮子王 The Lion King', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('爱宠大机密2 The Secret Life of Pets 2', 15, '2022-06-01 09:14:05');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('狮子王 The Lion King', 9, '2022-05-01 15:27:17');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('玩具总动员4 Toy Story 4', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('玩具总动员4 Toy Story 4', 9, '2019-12-15 22:58:04');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('疯狂动物城 Zootopia', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('白蛇：缘起', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('狮子王 The Lion King', 15, '2022-05-25 11:40:57');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('疯狂动物城 Zootopia', 15, '2022-05-25 11:46:31');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('白蛇：缘起', 9, '2022-05-01 17:50:19');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('精灵旅社2 Hotel Transylvania 2', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('罗小黑战记', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('罗小黑战记', 9, '2019-12-15 22:57:47');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('航海王：狂热行动 ONE PIECE STAMPEDE', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('白蛇：缘起', 15, '2022-05-25 11:39:51');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('罗小黑战记', 1, '2022-05-13 11:01:53');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('罗小黑战记', 15, '2022-06-01 09:17:47');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('航海王：狂热行动 ONE PIECE STAMPEDE', 9, '2022-05-01 15:28:54');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('谍影重重5 Jason Bourne', 3, '2019-12-12 15:16:11');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('这个杀手不太冷 Léon', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('航海王：狂热行动 ONE PIECE STAMPEDE', 15, '2022-05-20 16:14:19');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('这个杀手不太冷 Léon', 9, '2022-05-01 15:49:08');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('这个杀手不太冷 Léon', 15, '2022-05-20 16:16:02');
 INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('釜山行 부산행', 9, '2022-05-01 19:42:08');
-INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('驯龙高手3 How To Train Your Dragon: The Hidden World', 3, '2019-12-12 15:16:11');
+INSERT INTO `history` (`movieName`, `userid`, `addTime`) VALUES ('驯龙高手3 How To Train Your Dragon: The Hidden World', 1, '2022-05-20 13:56:10');
 COMMIT;
 
 -- ----------------------------
@@ -1677,6 +1674,7 @@ CREATE TABLE `score` (
 -- Records of score
 -- ----------------------------
 BEGIN;
+INSERT INTO `score` (`movieid`, `userid`, `score`) VALUES (1, 1, 10);
 COMMIT;
 
 -- ----------------------------
@@ -1696,17 +1694,18 @@ CREATE TABLE `users` (
   `role` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT 'commonUser' COMMENT '用户角色：普通用户，超级用户，VIP用户',
   `registTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '注册时间',
   PRIMARY KEY (`id`,`username`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
 BEGIN;
-INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (1, 'admin', '123456', '男', '945716994@qq.com', '18770411594', '管理员', '1024', 1, 'admin', '2019-10-24 11:12:31');
-INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (3, 'gg', '123', '男', '123@qq.com', NULL, 'Rush B', NULL, 1, 'commonUser', '2019-12-11 20:15:05');
-INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (5, 'mm', '123', NULL, 'mm@123.com', NULL, '唱、跳、rap、篮球', NULL, 1, 'commonUser', '2019-12-11 20:16:32');
-INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (8, 'ss', 'ss', 'null', NULL, 'null', '这家伙很懒，还没有添加任何描述', 'null', 1, 'commonUser', '2019-12-15 14:23:57');
-INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (9, '123', '123', 'null', NULL, 'null', '这家伙很懒，还没有添加任何描述', 'null', 1, 'commonUser', '2019-12-15 22:56:39');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (1, 'admin', '123456', 'Male', 'gdai@n7.fr', '18770411594', '管理员', '1024', 1, 'admin', '2022-06-01 13:22:56');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (3, 'gg', '123', '男', '123@qq.com', NULL, 'Rush B', NULL, 1, 'commonUser', '2022-05-20 15:55:49');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (5, 'mm', '123', NULL, 'mm@123.com', NULL, '唱、跳、rap、篮球', NULL, 1, 'commonUser', '2022-05-20 15:55:49');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (8, 'ss', 'ss', 'null', NULL, 'null', '这家伙很懒，还没有添加任何描述', 'null', 1, 'commonUser', '2022-05-20 15:55:49');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (9, '123', '123', 'null', NULL, 'null', '这家伙很懒，还没有添加任何描述', 'null', 1, 'commonUser', '2022-05-20 15:55:49');
+INSERT INTO `users` (`id`, `username`, `password`, `gender`, `email`, `telephone`, `introduce`, `activeCode`, `state`, `role`, `registTime`) VALUES (15, 'gdai', '1111', 'null', 'gdai@n7.fr', 'null', 'A international student in N7', 'null', 1, 'commonUser', '2022-05-20 15:58:17');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
