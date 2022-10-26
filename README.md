@@ -7,14 +7,15 @@ A Movie Website Based on Servlet+JSP
 #### Software
 - IntelliJ IDEA 2021.3.3 (Ultimate Edition)
 - Navicat Premium 16.0.12
-#### Frontend
+#### Front-end
 - html
 - css
 - JavaScript
 - BootStrap
 - EChart (support for showing the graph in admin's page)
 - JQuery
-#### Backend
+#### Back-end
+- Built by `Maven`
 - JSP
 - Servlet
 - DataBase: MySQL 5.7.27
@@ -44,11 +45,19 @@ A Movie Website Based on Servlet+JSP
 
 ### How to start?
 1. Download the zip and decompress it directly or install git and execute the clone command
-```
+```bash
 git clone git@github.com:Dave0126/ProjectWebApp.git
 ```
-2. Use IDEA to open the project, configure jdk, tomcat and the required jar package. The jar package that the project depends on is in the `web/WEB-INF/lib` folder.
-3. Open your app in managing DB (for example, Navicat), create a database named `moviesdata` , copy the file content in `moviesdata.sql` and run.
+2. As you can see, this project is built by `maven`. Please make sure to add the dependencies in the `pom.xml` file first to ensure the runtime dependency environment.
+
+3. Connect to your DataBase Management System ( `mySQL` is used as the test environment) to connect to the database and import `moviesdata.sql` into your database.
+
+   ```sql
+   create database <name>;
+   use <name>;
+   source moviesdata.sql;
+   ```
+
 4. Modify the database-related content in `/src/c3p0-config.xml`.
 ```xml
     <property name="user">root</property>
